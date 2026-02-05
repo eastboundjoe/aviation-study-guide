@@ -93,14 +93,20 @@ export default function CheckpointPage() {
   };
 
   const askStudyPartner = async () => {
-    if (!transcript && !interimTranscript) return;
+    const finalTranscript = fullTranscriptRef.current.trim();
+    if (finalTranscript.length < 10) {
+      setAiFeedback("I didn't hear enough to give a summary.");
+      setAiClue("Try speaking a bit more about the chapter so I can track your progress.");
+      return;
+    }
+    
     setIsAnalyzing(true);
     
     const result = await analyzeRecall({
       chapterTitle: chapter?.title || '',
       bookTitle: bookTitle,
       keyPoints: checkpoint?.keyPoints.map(kp => ({ text: kp.text, id: kp.id })) || [],
-      transcript: fullTranscriptRef.current + interimTranscript
+      transcript: finalTranscript
     });
 
     if (result) {
