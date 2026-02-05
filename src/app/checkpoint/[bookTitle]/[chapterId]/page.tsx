@@ -90,33 +90,48 @@ export default function CheckpointPage() {
     if (isMuted || typeof window === 'undefined') return;
     
     setIsPlaying(true);
+    
+    // Split text into sentences to handle TTS length limits
+    const chunks = text.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [text];
+    
     try {
-      const result = await synthesizeSpeech(text);
-      
-      if (result && typeof result === 'string') {
-        const audioBlob = new Blob(
-          [Uint8Array.from(atob(result), c => c.charCodeAt(0))],
-          { type: 'audio/mp3' }
-        );
-        const url = URL.createObjectURL(audioBlob);
+      for (const chunk of chunks) {
+        if (!chunk.trim()) continue;
         
-        if (audioRef.current) {
-          audioRef.current.src = url;
-          audioRef.current.play();
-          audioRef.current.onended = () => setIsPlaying(false);
+        const result = await synthesizeSpeech(chunk.trim());
+        
+        if (result && typeof result === 'string') {
+          await new Promise<void>((resolve) => {
+            const audioBlob = new Blob(
+              [Uint8Array.from(atob(result), c => c.charCodeAt(0))],
+              { type: 'audio/mp3' }
+            );
+            const url = URL.createObjectURL(audioBlob);
+            
+            if (audioRef.current) {
+              audioRef.current.src = url;
+              audioRef.current.onended = () => resolve();
+              audioRef.current.play();
+            } else {
+              resolve();
+            }
+          });
+        } else {
+          if (result && (result as any).error) {
+             console.warn("TTS Chunk Error:", (result as any).error);
+          }
+          await new Promise<void>((resolve) => {
+            window.speechSynthesis.cancel();
+            const utterance = new SpeechSynthesisUtterance(chunk);
+            utterance.rate = 0.95;
+            utterance.onend = () => resolve();
+            window.speechSynthesis.speak(utterance);
+          });
         }
-      } else {
-        if (result && (result as any).error) {
-          console.warn("High-quality TTS failed, falling back to browser. Error:", (result as any).error);
-        }
-        window.speechSynthesis.cancel();
-        const utterance = new SpeechSynthesisUtterance(text);
-        utterance.rate = 0.95;
-        utterance.onend = () => setIsPlaying(false);
-        window.speechSynthesis.speak(utterance);
       }
     } catch (e) {
-      console.error("Speech Synthesis Error:", e);
+      console.error("Speech Synthesis Sequence Error:", e);
+    } finally {
       setIsPlaying(false);
     }
   };
