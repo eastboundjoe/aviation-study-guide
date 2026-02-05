@@ -10,11 +10,10 @@ export async function synthesizeSpeech(text: string) {
     input: { text },
     voice: {
       languageCode: "en-US",
-      name: "en-US-Studio-O", // "Achernar" is often mapped to Studio-O or specific Journey voices
+      name: "en-US-Journey-F", // This is the identifier for 'Achernar' (Female)
     },
     audioConfig: {
       audioEncoding: "MP3",
-      effectsProfileId: ["handset-class-device"],
       pitch: 0,
       speakingRate: 1.0
     },
@@ -31,9 +30,12 @@ export async function synthesizeSpeech(text: string) {
     if (data.audioContent) {
       return data.audioContent; 
     } else {
-      // Return the error message to the frontend for debugging
       const errorMsg = data.error?.message || JSON.stringify(data);
-      console.error("TTS API Error Details:", errorMsg);
+      console.error("TTS API Error:", errorMsg);
+      // If the error specifically mentions it's disabled, return that info
+      if (errorMsg.includes("disabled") || errorMsg.includes("not been used")) {
+        return { error: "API_DISABLED", details: errorMsg };
+      }
       return { error: errorMsg };
     }
   } catch (error: any) {
