@@ -4,7 +4,7 @@ export async function synthesizeSpeech(text: string) {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) throw new Error("API Key missing");
 
-  const url = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${apiKey}`;
+  const url = `https://texttospeech.googleapis.com/v1beta1/text:synthesize?key=${apiKey}`;
 
   const body = {
     input: { text },
