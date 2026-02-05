@@ -5,27 +5,51 @@
     "questions": [
       {
         "id": "afh-1-1",
-        "question": "What is the primary purpose of the Airplane Flying Handbook?",
+        "question": "What is the primary role of the Federal Aviation Administration (FAA) as empowered by U.S. Congress?",
         "options": [
-          "To provide regulations for commercial flight",
-          "To provide basic knowledge essential for pilots",
-          "To serve as a guide for aircraft maintenance",
-          "To list all active airports in the United States"
+          "To manage commercial airline profits",
+          "To promote aviation safety by prescribing safety standards",
+          "To manufacture civil aircraft for general use",
+          "To control international airspace outside the U.S."
         ],
         "correctAnswer": 1,
-        "explanation": "The Airplane Flying Handbook provides basic knowledge that is essential for pilots, assisting student pilots and helping certificated pilots improve their proficiency."
+        "explanation": "The FAA is empowered to promote aviation safety by prescribing safety standards for civil aviation, established through the Code of Federal Regulations (CFR)."
       },
       {
         "id": "afh-1-2",
-        "question": "Which FAA program is mentioned in Chapter 1 to help pilots continue their education and improve safety?",
+        "question": "Which part of 14 CFR pertains to the certification of pilots, flight instructors, and ground instructors?",
         "options": [
-          "The SAF AIR Program",
-          "The Pilot Pro Program",
-          "The FAA Wings Program",
-          "The Skyward Initiative"
+          "14 CFR part 91",
+          "14 CFR part 43",
+          "14 CFR part 61",
+          "14 CFR part 67"
         ],
         "correctAnswer": 2,
-        "explanation": "Chapter 1 introduces the FAA Wings Program as a way for pilots to continue their education."
+        "explanation": "14 CFR part 61 prescribes the eligibility, aeronautical knowledge, flight proficiency training, and testing requirements for pilot certificates."
+      },
+      {
+        "id": "afh-1-3",
+        "question": "What does 14 CFR part 39 authorize the FAA to issue when an unsafe condition exists in an aircraft product?",
+        "options": [
+          "Notices to Air Missions (NOTAMs)",
+          "Airworthiness Directives (ADs)",
+          "Standard Airworthiness Certificates",
+          "Special Flight Permits"
+        ],
+        "correctAnswer": 1,
+        "explanation": "14 CFR part 39 is the authority for the FAA to issue Airworthiness Directives (ADs) when an unsafe condition exists in a product."
+      },
+      {
+        "id": "afh-1-4",
+        "question": "What is the primary interface between the Flight Standards Service (FS) and the general aviation community?",
+        "options": [
+          "The National Transportation Safety Board (NTSB)",
+          "The local Flight Standards District Office (FSDO)",
+          "The FAA Academy in Oklahoma City",
+          "The U.S. Congress"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The local Flight Standards District Office (FSDO) is the primary interface for certification and surveillance of airmen and operators."
       }
     ]
   },
