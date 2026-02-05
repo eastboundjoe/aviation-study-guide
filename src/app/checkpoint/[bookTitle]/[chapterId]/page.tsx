@@ -5,7 +5,7 @@ import { useParams, useRouter } from 'next/navigation';
 import checkpointsData from '@/data/checkpoints.json';
 import booksData from '@/data/books.json';
 import { useProgress } from '@/hooks/useProgress';
-import { Mic, MicOff, CheckCircle2, ChevronLeft, Volume2, Info, RefreshCw, Trophy, Sparkles, MessageCircle } from 'lucide-react';
+import { Mic, MicOff, CheckCircle2, ChevronLeft, Volume2, VolumeX, Info, RefreshCw, Trophy, Sparkles, MessageCircle } from 'lucide-react';
 import Link from 'next/link';
 import { analyzeRecall } from '@/app/actions/study-partner';
 
@@ -27,6 +27,7 @@ export default function CheckpointPage() {
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [aiFeedback, setAiFeedback] = useState<string | null>(null);
   const [aiClue, setAiClue] = useState<string | null>(null);
+  const [isMuted, setIsMuted] = useState(false);
   const [showDebug, setShowDebug] = useState(false);
   const fullTranscriptRef = useRef('');
   const interimRef = useRef('');
@@ -67,22 +68,32 @@ export default function CheckpointPage() {
       rec.onerror = (event: any) => {
         console.error('Speech recognition error:', event.error);
         if (event.error === 'no-speech') {
-           // Keep going if it's just silence
         } else {
            setIsRecording(false);
         }
       };
 
       rec.onend = () => {
-        // Only stop if we explicitly called stop
         if (isRecording) {
-           rec.start(); // Restart if it timed out but we want to keep recording
+           rec.start();
         }
       };
 
       setRecognition(rec);
     }
   }, [checkpoint]);
+
+  const speakResponse = (text: string) => {
+    if (isMuted || typeof window === 'undefined') return;
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    const voices = window.speechSynthesis.getVoices();
+    const instructorVoice = voices.find(v => v.name.includes('Google US English') || v.name.includes('Male')) || voices[0];
+    if (instructorVoice) utterance.voice = instructorVoice;
+    utterance.rate = 0.95;
+    utterance.pitch = 1.0;
+    window.speechSynthesis.speak(utterance);
+  };
 
   const checkKeywords = (text: string) => {
     const lowerText = text.toLowerCase();
@@ -96,8 +107,9 @@ export default function CheckpointPage() {
   const askStudyPartner = async () => {
     const finalTranscript = (fullTranscriptRef.current + interimRef.current).trim();
     if (finalTranscript.length < 10) {
-      setAiFeedback("I didn't hear enough to give a summary.");
-      setAiClue("Try speaking a bit more about the chapter so I can track your progress.");
+      const msg = "I didn't hear enough to give a summary. Try speaking a bit more.";
+      setAiFeedback(msg);
+      speakResponse(msg);
       return;
     }
     
@@ -113,8 +125,7 @@ export default function CheckpointPage() {
     if (result) {
       setAiFeedback(result.feedback);
       setAiClue(result.clue);
-      
-      // Update checked state based on AI analysis (matching IDs)
+      speakResponse(`${result.feedback}. ${result.clue}`);
       setKeyPoints(prev => prev.map(kp => ({
         ...kp,
         checked: result.coveredPointIds.includes(kp.id) || kp.checked
@@ -127,10 +138,7 @@ export default function CheckpointPage() {
     if (isRecording) {
       recognition.stop();
       setIsRecording(false);
-      // Wait a moment for any final "interim" results to move into the ref
-      setTimeout(() => {
-        askStudyPartner();
-      }, 800);
+      setTimeout(askStudyPartner, 800);
     } else {
       fullTranscriptRef.current = '';
       setTranscript('');
@@ -185,9 +193,22 @@ export default function CheckpointPage() {
           <Link href="/" className="text-slate-500 hover:text-slate-800 flex items-center gap-1 transition-colors">
             <ChevronLeft size={20} /> Back
           </Link>
-          <div className="text-right">
-            <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{bookTitle}</p>
-            <h1 className="text-lg font-bold text-slate-800">Chapter {chapterId}: {chapter?.title}</h1>
+          <div className="text-right flex items-center gap-4">
+            <button 
+              onClick={() => {
+                const newMuted = !isMuted;
+                setIsMuted(newMuted);
+                if (newMuted) window.speechSynthesis.cancel();
+              }}
+              className={`p-2 rounded-full transition-colors ${isMuted ? 'bg-slate-200 text-slate-500' : 'bg-blue-100 text-blue-600'}`}
+              title={isMuted ? "Unmute AI Voice" : "Mute AI Voice"}
+            >
+              {isMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
+            </button>
+            <div>
+              <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{bookTitle}</p>
+              <h1 className="text-lg font-bold text-slate-800">Chapter {chapterId}: {chapter?.title}</h1>
+            </div>
           </div>
         </div>
 
@@ -197,7 +218,7 @@ export default function CheckpointPage() {
             <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm min-h-[400px] flex flex-col relative overflow-hidden">
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-xl font-bold text-slate-900 flex items-center gap-2">
-                  <Volume2 className="text-blue-500" size={20} /> Verbal Recall
+                  <MessageCircle className="text-blue-500" size={20} /> Verbal Recall
                 </h2>
                 {isRecording && (
                   <span className="flex items-center gap-2 text-rose-500 text-xs font-bold animate-pulse">
@@ -259,10 +280,12 @@ export default function CheckpointPage() {
                 ) : (
                   <div className="space-y-4">
                     <p className="text-sm leading-relaxed text-indigo-100 italic">"{aiFeedback}"</p>
-                    <div className="bg-white/10 p-4 rounded-2xl border border-white/10">
-                      <p className="text-xs uppercase tracking-widest font-bold text-amber-300 mb-2">Instructor Clue:</p>
-                      <p className="text-base font-medium leading-relaxed">{aiClue}</p>
-                    </div>
+                    {aiClue && (
+                      <div className="bg-white/10 p-4 rounded-2xl border border-white/10">
+                        <p className="text-xs uppercase tracking-widest font-bold text-amber-300 mb-2">Instructor Clue:</p>
+                        <p className="text-base font-medium leading-relaxed">{aiClue}</p>
+                      </div>
+                    )}
                     <button 
                       onClick={toggleRecording}
                       className="text-xs font-bold uppercase tracking-wider flex items-center gap-2 text-white hover:text-amber-300 transition-colors"
