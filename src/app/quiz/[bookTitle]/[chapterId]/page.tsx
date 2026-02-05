@@ -11,7 +11,7 @@ import Link from 'next/link';
 export default function QuizPage() {
   const params = useParams();
   const router = useRouter();
-  const { markChapterComplete, updateReviewLevel } = useProgress();
+  const { completeCheckpoint } = useProgress();
   
   const bookTitle = decodeURIComponent(params.bookTitle as string);
   const chapterId = parseInt(params.chapterId as string);
@@ -61,9 +61,8 @@ export default function QuizPage() {
       setShowOptions(false); // Reset for next question
     } else {
       setIsFinished(true);
-      markChapterComplete(bookTitle, chapterId);
       const passed = (score + (selectedOption === currentQuestion.correctAnswer ? 1 : 0)) / quiz.questions.length > 0.7;
-      updateReviewLevel(bookTitle, chapterId, passed);
+      completeCheckpoint(bookTitle, chapterId, passed);
     }
   };
 
