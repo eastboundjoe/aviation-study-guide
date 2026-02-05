@@ -9,6 +9,7 @@ export interface Chapter {
 
 export interface Book {
   title: string;
+  emoji: string;
   filename: string;
   chapters: Chapter[];
 }
