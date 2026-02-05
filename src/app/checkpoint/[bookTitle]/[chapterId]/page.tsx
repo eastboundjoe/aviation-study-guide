@@ -91,14 +91,18 @@ export default function CheckpointPage() {
     
     setIsPlaying(true);
     
-    // Split text into sentences to handle TTS length limits
+    // 1. Split text into sentences
     const chunks = text.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [text];
     
     try {
-      for (const chunk of chunks) {
+      // 2. Start synthesizing ALL chunks in parallel for maximum speed
+      const audioPromises = chunks.map(chunk => synthesizeSpeech(chunk.trim()));
+      
+      for (let i = 0; i < chunks.length; i++) {
+        const chunk = chunks[i];
         if (!chunk.trim()) continue;
         
-        const result = await synthesizeSpeech(chunk.trim());
+        const result = await audioPromises[i];
         
         if (result && typeof result === 'string') {
           await new Promise<void>((resolve) => {
@@ -111,15 +115,16 @@ export default function CheckpointPage() {
             if (audioRef.current) {
               audioRef.current.src = url;
               audioRef.current.onended = () => resolve();
-              audioRef.current.play();
+              audioRef.current.play().catch(e => {
+                console.error("Audio Playback Blocked:", e);
+                resolve();
+              });
             } else {
               resolve();
             }
           });
         } else {
-          if (result && (result as any).error) {
-             console.warn("TTS Chunk Error:", (result as any).error);
-          }
+          // Fallback to browser voice for this chunk
           await new Promise<void>((resolve) => {
             window.speechSynthesis.cancel();
             const utterance = new SpeechSynthesisUtterance(chunk);
@@ -166,6 +171,7 @@ export default function CheckpointPage() {
     if (result) {
       setAiFeedback(result.feedback);
       setAiClue(result.clue);
+      // The speakResponse now handles parallel synthesis internally
       speakResponse(`${result.feedback}. ${result.clue}`);
       setKeyPoints(prev => prev.map(kp => ({
         ...kp,
@@ -179,7 +185,8 @@ export default function CheckpointPage() {
     if (isRecording) {
       recognition.stop();
       setIsRecording(false);
-      setTimeout(askStudyPartner, 800);
+      // Snappier transition (400ms instead of 800ms)
+      setTimeout(askStudyPartner, 400);
     } else {
       fullTranscriptRef.current = '';
       setTranscript('');
