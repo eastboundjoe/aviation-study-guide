@@ -3,7 +3,7 @@ import re
 import os
 
 books_dir = "/mnt/c/Users/Ramen Bomb/Desktop/aviation-books/"
-output_file = "/mnt/c/Users/Ramen Bomb/Desktop/Code/aviation-study-guide/books_data.json"
+output_file = "/mnt/c/Users/Ramen Bomb/Desktop/Code/aviation-study-guide/src/data/books.json"
 
 book_files = [
     "FAA-Airplane Flying Handbook.txt",
@@ -17,28 +17,61 @@ book_files = [
     "FAA-aviation instructors handbook.txt"
 ]
 
+def clean_title(title):
+    # Remove page numbers like 1-1, 2-1 or trailing dots
+    title = re.sub(r'[\.\s]+[\d]+-[\d]+$', '', title)
+    title = re.sub(r'[\.\s]+$', '', title)
+    # Remove leading dots or symbols
+    title = re.sub(r'^[\.\s\u2022]+', '', title)
+    return title.strip()
+
 def extract_chapters(file_path):
     chapters = []
     with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
-        content = f.read()
+        lines = f.readlines()
         
-        # Look for the Table of Contents section
-        toc_match = re.search(r'Table of Contents', content, re.IGNORECASE)
-        if not toc_match:
-            return []
+        # We look for "Chapter X" on one line, and the title on the NEXT line
+        # This is common in these FAA PDFs
+        for i in range(len(lines) - 1):
+            line = lines[i].strip()
+            next_line = lines[i+1].strip()
             
-        toc_text = content[toc_match.start():toc_match.start() + 20000] # Take first 20k chars
-        
-        # Match "Chapter X: Name"
-        chapter_matches = re.finditer(r'Chapter (\d+):\s*(.*)', toc_text)
-        
-        for match in chapter_matches:
-            chapters.append({
-                "id": int(match.group(1)),
-                "title": match.group(2).strip(),
-                "completed": False,
-                "quizzes": [] # We will populate this later
-            })
+            # Match "Chapter 1" or "Chapter One" etc
+            ch_match = re.match(r'^Chapter\s+(\d+)$', line, re.IGNORECASE)
+            if ch_match:
+                cid = int(ch_match.group(1))
+                # The next line is likely the title
+                title = clean_title(next_line)
+                
+                # If title is empty or just a page number, look one more line down
+                if not title or re.match(r'^\d+$', title):
+                    if i + 2 < len(lines):
+                        title = clean_title(lines[i+2].strip())
+
+                if title and len(title) > 3:
+                    # Check if we already have this chapter
+                    if not any(c['id'] == cid for c in chapters):
+                        chapters.append({
+                            "id": cid,
+                            "title": title
+                        })
+
+        # Fallback: Match "Chapter 1: Title" on same line
+        for line in lines:
+            match = re.match(r'^Chapter\s+(\d+)[:\-\s\.]+(.*)$', line.strip(), re.IGNORECASE)
+            if match:
+                cid = int(match.group(1))
+                title = clean_title(match.group(2))
+                if title and len(title) > 3:
+                    if not any(c['id'] == cid for c in chapters):
+                        chapters.append({
+                            "id": cid,
+                            "title": title
+                        })
+
+        chapters.sort(key=lambda x: x['id'])
+        # Limit to 30 chapters to avoid junk
+        chapters = [c for c in chapters if c['id'] < 30]
             
     return chapters
 

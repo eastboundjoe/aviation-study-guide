@@ -1,0 +1,4565 @@
+[
+    {
+        "bookTitle": "Airplane Flying Handbook",
+        "chapterId": 1,
+        "summary": "This chapter covers (Introduction to Flight Training) \u2013 Added information on the FAA Wings Program. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Air-1-1",
+                "text": "Explain the core principles of (Introduction to Flight Training) \u2013 Added information on the FAA Wings Program and how they affect flight safety.",
+                "keywords": [
+                    "(introduction",
+                    "takeoff",
+                    "landing"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-1-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 1.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-1-3",
+                "text": "Describe the practical application of (Introduction to Flight Training) \u2013 Added information on the FAA Wings Program during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Airplane Flying Handbook",
+        "chapterId": 2,
+        "summary": "This chapter covers (Ground Operations) \u2013 Added a new graphic and information regarding detonation. Now uses. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Air-2-1",
+                "text": "Explain the core principles of (Ground Operations) \u2013 Added a new graphic and information regarding detonation. Now uses and how they affect flight safety.",
+                "keywords": [
+                    "(ground",
+                    "takeoff",
+                    "landing"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-2-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 2.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-2-3",
+                "text": "Describe the practical application of (Ground Operations) \u2013 Added a new graphic and information regarding detonation. Now uses during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Airplane Flying Handbook",
+        "chapterId": 3,
+        "summary": "This chapter covers (Basic Flight Maneuvers) \u2013 Corrected G1000 and indications of slip and skid graphics. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Air-3-1",
+                "text": "Explain the core principles of (Basic Flight Maneuvers) \u2013 Corrected G1000 and indications of slip and skid graphics and how they affect flight safety.",
+                "keywords": [
+                    "(basic",
+                    "takeoff",
+                    "landing"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-3-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 3.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-3-3",
+                "text": "Describe the practical application of (Basic Flight Maneuvers) \u2013 Corrected G1000 and indications of slip and skid graphics during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Airplane Flying Handbook",
+        "chapterId": 4,
+        "summary": "This chapter covers (Energy Management) \u2013 All new chapter/material. Incremented the existing chapters 4-17 by 1. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Air-4-1",
+                "text": "Explain the core principles of (Energy Management) \u2013 All new chapter/material. Incremented the existing chapters 4-17 by 1 and how they affect flight safety.",
+                "keywords": [
+                    "(energy",
+                    "takeoff",
+                    "landing"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-4-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 4.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-4-3",
+                "text": "Describe the practical application of (Energy Management) \u2013 All new chapter/material. Incremented the existing chapters 4-17 by 1 during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Airplane Flying Handbook",
+        "chapterId": 5,
+        "summary": "This chapter covers (Maintaining Aircraft Control) \u2013 Revised the order in which the material was presented. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Air-5-1",
+                "text": "Explain the core principles of (Maintaining Aircraft Control) \u2013 Revised the order in which the material was presented and how they affect flight safety.",
+                "keywords": [
+                    "(maintaining",
+                    "takeoff",
+                    "landing"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-5-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 5.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-5-3",
+                "text": "Describe the practical application of (Maintaining Aircraft Control) \u2013 Revised the order in which the material was presented during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Airplane Flying Handbook",
+        "chapterId": 6,
+        "summary": "This chapter covers Takeoffs and Departure Climbs. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Air-6-1",
+                "text": "Explain the core principles of Takeoffs and Departure Climbs and how they affect flight safety.",
+                "keywords": [
+                    "takeoffs",
+                    "takeoff",
+                    "landing"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-6-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 6.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-6-3",
+                "text": "Describe the practical application of Takeoffs and Departure Climbs during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Airplane Flying Handbook",
+        "chapterId": 7,
+        "summary": "This chapter covers (Ground Reference Maneuvers) \u2013 Corrected errors in text and graphics for eights on pylons. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Air-7-1",
+                "text": "Explain the core principles of (Ground Reference Maneuvers) \u2013 Corrected errors in text and graphics for eights on pylons and how they affect flight safety.",
+                "keywords": [
+                    "(ground",
+                    "takeoff",
+                    "landing"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-7-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 7.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-7-3",
+                "text": "Describe the practical application of (Ground Reference Maneuvers) \u2013 Corrected errors in text and graphics for eights on pylons during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Airplane Flying Handbook",
+        "chapterId": 8,
+        "summary": "This chapter covers Airport Traffic Patterns. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Air-8-1",
+                "text": "Explain the core principles of Airport Traffic Patterns and how they affect flight safety.",
+                "keywords": [
+                    "airport",
+                    "takeoff",
+                    "landing"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-8-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 8.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-8-3",
+                "text": "Describe the practical application of Airport Traffic Patterns during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Airplane Flying Handbook",
+        "chapterId": 9,
+        "summary": "This chapter covers (Approaches and Landings) \u2013 Added information concerning a forward slip to a landing and. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Air-9-1",
+                "text": "Explain the core principles of (Approaches and Landings) \u2013 Added information concerning a forward slip to a landing and and how they affect flight safety.",
+                "keywords": [
+                    "(approaches",
+                    "takeoff",
+                    "landing"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-9-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 9.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-9-3",
+                "text": "Describe the practical application of (Approaches and Landings) \u2013 Added information concerning a forward slip to a landing and during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Airplane Flying Handbook",
+        "chapterId": 10,
+        "summary": "This chapter covers (Performance Maneuvers) \u2013 Added information on lazy eights. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Air-10-1",
+                "text": "Explain the core principles of (Performance Maneuvers) \u2013 Added information on lazy eights and how they affect flight safety.",
+                "keywords": [
+                    "(performance",
+                    "takeoff",
+                    "landing"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-10-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 10.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-10-3",
+                "text": "Describe the practical application of (Performance Maneuvers) \u2013 Added information on lazy eights during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Airplane Flying Handbook",
+        "chapterId": 11,
+        "summary": "This chapter covers (Night Operations) \u2013 Revised to align with material from CAMI. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Air-11-1",
+                "text": "Explain the core principles of (Night Operations) \u2013 Revised to align with material from CAMI and how they affect flight safety.",
+                "keywords": [
+                    "(night",
+                    "takeoff",
+                    "landing"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-11-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 11.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-11-3",
+                "text": "Describe the practical application of (Night Operations) \u2013 Revised to align with material from CAMI during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Airplane Flying Handbook",
+        "chapterId": 12,
+        "summary": "This chapter covers Transition to Complex Airplanes. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Air-12-1",
+                "text": "Explain the core principles of Transition to Complex Airplanes and how they affect flight safety.",
+                "keywords": [
+                    "transition",
+                    "takeoff",
+                    "landing"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-12-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 12.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-12-3",
+                "text": "Describe the practical application of Transition to Complex Airplanes during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Airplane Flying Handbook",
+        "chapterId": 13,
+        "summary": "This chapter covers (Transition to Multiengine Airplanes) \u2013 Incorporated the addendum. Corrected G1000. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Air-13-1",
+                "text": "Explain the core principles of (Transition to Multiengine Airplanes) \u2013 Incorporated the addendum. Corrected G1000 and how they affect flight safety.",
+                "keywords": [
+                    "(transition",
+                    "takeoff",
+                    "landing"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-13-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 13.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-13-3",
+                "text": "Describe the practical application of (Transition to Multiengine Airplanes) \u2013 Incorporated the addendum. Corrected G1000 during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Airplane Flying Handbook",
+        "chapterId": 14,
+        "summary": "This chapter covers (Transition to Tailwheel Airplanes) \u2013 Made minor revision regarding handling characteristics. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Air-14-1",
+                "text": "Explain the core principles of (Transition to Tailwheel Airplanes) \u2013 Made minor revision regarding handling characteristics and how they affect flight safety.",
+                "keywords": [
+                    "(transition",
+                    "takeoff",
+                    "landing"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-14-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 14.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-14-3",
+                "text": "Describe the practical application of (Transition to Tailwheel Airplanes) \u2013 Made minor revision regarding handling characteristics during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Airplane Flying Handbook",
+        "chapterId": 15,
+        "summary": "This chapter covers (Transition to Turbopropeller-Powered Airplanes) \u2013 Addressed an NTSB recommendation. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Air-15-1",
+                "text": "Explain the core principles of (Transition to Turbopropeller-Powered Airplanes) \u2013 Addressed an NTSB recommendation and how they affect flight safety.",
+                "keywords": [
+                    "(transition",
+                    "takeoff",
+                    "landing"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-15-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 15.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-15-3",
+                "text": "Describe the practical application of (Transition to Turbopropeller-Powered Airplanes) \u2013 Addressed an NTSB recommendation during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Airplane Flying Handbook",
+        "chapterId": 16,
+        "summary": "This chapter covers (Transition to Jet-Powered Airplanes) \u2013 Removed extra information that appears unrelated to. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Air-16-1",
+                "text": "Explain the core principles of (Transition to Jet-Powered Airplanes) \u2013 Removed extra information that appears unrelated to and how they affect flight safety.",
+                "keywords": [
+                    "(transition",
+                    "takeoff",
+                    "landing"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-16-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 16.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-16-3",
+                "text": "Describe the practical application of (Transition to Jet-Powered Airplanes) \u2013 Removed extra information that appears unrelated to during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Airplane Flying Handbook",
+        "chapterId": 17,
+        "summary": "This chapter covers Transition to Light Sport Airplanes (LSA). Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Air-17-1",
+                "text": "Explain the core principles of Transition to Light Sport Airplanes (LSA) and how they affect flight safety.",
+                "keywords": [
+                    "transition",
+                    "takeoff",
+                    "landing"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-17-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 17.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-17-3",
+                "text": "Describe the practical application of Transition to Light Sport Airplanes (LSA) during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Airplane Flying Handbook",
+        "chapterId": 18,
+        "summary": "This chapter covers (Emergency Procedures) \u2013 Revised information regarding the safety of turning back after an. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Air-18-1",
+                "text": "Explain the core principles of (Emergency Procedures) \u2013 Revised information regarding the safety of turning back after an and how they affect flight safety.",
+                "keywords": [
+                    "(emergency",
+                    "takeoff",
+                    "landing"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-18-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 18.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Air-18-3",
+                "text": "Describe the practical application of (Emergency Procedures) \u2013 Revised information regarding the safety of turning back after an during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Instrument Flying Handbook",
+        "chapterId": 1,
+        "summary": "This chapter covers The National Airspace System. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ins-1-1",
+                "text": "Explain the core principles of The National Airspace System and how they affect flight safety.",
+                "keywords": [
+                    "the",
+                    "IFR",
+                    "ATC"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-1-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 1.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-1-3",
+                "text": "Describe the practical application of The National Airspace System during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Instrument Flying Handbook",
+        "chapterId": 2,
+        "summary": "This chapter covers The Air Traffic Control System. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ins-2-1",
+                "text": "Explain the core principles of The Air Traffic Control System and how they affect flight safety.",
+                "keywords": [
+                    "the",
+                    "IFR",
+                    "ATC"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-2-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 2.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-2-3",
+                "text": "Describe the practical application of The Air Traffic Control System during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Instrument Flying Handbook",
+        "chapterId": 3,
+        "summary": "This chapter covers Human Factors. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ins-3-1",
+                "text": "Explain the core principles of Human Factors and how they affect flight safety.",
+                "keywords": [
+                    "human",
+                    "IFR",
+                    "ATC"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-3-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 3.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-3-3",
+                "text": "Describe the practical application of Human Factors during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Instrument Flying Handbook",
+        "chapterId": 4,
+        "summary": "This chapter covers Aerodynamic Factors. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ins-4-1",
+                "text": "Explain the core principles of Aerodynamic Factors and how they affect flight safety.",
+                "keywords": [
+                    "aerodynamic",
+                    "IFR",
+                    "ATC"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-4-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 4.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-4-3",
+                "text": "Describe the practical application of Aerodynamic Factors during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Instrument Flying Handbook",
+        "chapterId": 5,
+        "summary": "This chapter covers Flight Instruments. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ins-5-1",
+                "text": "Explain the core principles of Flight Instruments and how they affect flight safety.",
+                "keywords": [
+                    "flight",
+                    "IFR",
+                    "ATC"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-5-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 5.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-5-3",
+                "text": "Describe the practical application of Flight Instruments during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Instrument Flying Handbook",
+        "chapterId": 8,
+        "summary": "This chapter covers Helicopter Attitude Instrument Flying. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ins-8-1",
+                "text": "Explain the core principles of Helicopter Attitude Instrument Flying and how they affect flight safety.",
+                "keywords": [
+                    "helicopter",
+                    "IFR",
+                    "ATC"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-8-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 8.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-8-3",
+                "text": "Describe the practical application of Helicopter Attitude Instrument Flying during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Instrument Flying Handbook",
+        "chapterId": 9,
+        "summary": "This chapter covers Navigation Systems. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ins-9-1",
+                "text": "Explain the core principles of Navigation Systems and how they affect flight safety.",
+                "keywords": [
+                    "navigation",
+                    "IFR",
+                    "ATC"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-9-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 9.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-9-3",
+                "text": "Describe the practical application of Navigation Systems during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Instrument Flying Handbook",
+        "chapterId": 10,
+        "summary": "This chapter covers IFR Flight. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ins-10-1",
+                "text": "Explain the core principles of IFR Flight and how they affect flight safety.",
+                "keywords": [
+                    "ifr",
+                    "IFR",
+                    "ATC"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-10-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 10.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-10-3",
+                "text": "Describe the practical application of IFR Flight during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Instrument Flying Handbook",
+        "chapterId": 11,
+        "summary": "This chapter covers Emergency Operations. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ins-11-1",
+                "text": "Explain the core principles of Emergency Operations and how they affect flight safety.",
+                "keywords": [
+                    "emergency",
+                    "IFR",
+                    "ATC"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-11-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 11.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-11-3",
+                "text": "Describe the practical application of Emergency Operations during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Instrument Procedures Handbook",
+        "chapterId": 1,
+        "summary": "This chapter covers Departure Procedures. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ins-1-1",
+                "text": "Explain the core principles of Departure Procedures and how they affect flight safety.",
+                "keywords": [
+                    "departure",
+                    "IFR",
+                    "ATC"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-1-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 1.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-1-3",
+                "text": "Describe the practical application of Departure Procedures during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Instrument Procedures Handbook",
+        "chapterId": 2,
+        "summary": "This chapter covers En Route Operations. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ins-2-1",
+                "text": "Explain the core principles of En Route Operations and how they affect flight safety.",
+                "keywords": [
+                    "en",
+                    "IFR",
+                    "ATC"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-2-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 2.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-2-3",
+                "text": "Describe the practical application of En Route Operations during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Instrument Procedures Handbook",
+        "chapterId": 3,
+        "summary": "This chapter covers Arrivals. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ins-3-1",
+                "text": "Explain the core principles of Arrivals and how they affect flight safety.",
+                "keywords": [
+                    "arrivals",
+                    "IFR",
+                    "ATC"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-3-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 3.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-3-3",
+                "text": "Describe the practical application of Arrivals during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Instrument Procedures Handbook",
+        "chapterId": 4,
+        "summary": "This chapter covers Approaches. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ins-4-1",
+                "text": "Explain the core principles of Approaches and how they affect flight safety.",
+                "keywords": [
+                    "approaches",
+                    "IFR",
+                    "ATC"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-4-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 4.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-4-3",
+                "text": "Describe the practical application of Approaches during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Instrument Procedures Handbook",
+        "chapterId": 5,
+        "summary": "This chapter covers Improvement Plans. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ins-5-1",
+                "text": "Explain the core principles of Improvement Plans and how they affect flight safety.",
+                "keywords": [
+                    "improvement",
+                    "IFR",
+                    "ATC"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-5-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 5.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-5-3",
+                "text": "Describe the practical application of Improvement Plans during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Instrument Procedures Handbook",
+        "chapterId": 6,
+        "summary": "This chapter covers Airborne Navigation Databases. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ins-6-1",
+                "text": "Explain the core principles of Airborne Navigation Databases and how they affect flight safety.",
+                "keywords": [
+                    "airborne",
+                    "IFR",
+                    "ATC"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-6-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 6.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-6-3",
+                "text": "Describe the practical application of Airborne Navigation Databases during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Instrument Procedures Handbook",
+        "chapterId": 7,
+        "summary": "This chapter covers Helicopter Instrument Procedures. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ins-7-1",
+                "text": "Explain the core principles of Helicopter Instrument Procedures and how they affect flight safety.",
+                "keywords": [
+                    "helicopter",
+                    "IFR",
+                    "ATC"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-7-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 7.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ins-7-3",
+                "text": "Describe the practical application of Helicopter Instrument Procedures during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Pilots Handbook of Aeronautical Knowledge",
+        "chapterId": 1,
+        "summary": "This chapter covers Introduction To Flying. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pil-1-1",
+                "text": "Explain the core principles of Introduction To Flying and how they affect flight safety.",
+                "keywords": [
+                    "introduction",
+                    "regulations",
+                    "aerodynamics"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-1-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 1.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-1-3",
+                "text": "Describe the practical application of Introduction To Flying during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Pilots Handbook of Aeronautical Knowledge",
+        "chapterId": 2,
+        "summary": "This chapter covers Aeronautical Decision-Making. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pil-2-1",
+                "text": "Explain the core principles of Aeronautical Decision-Making and how they affect flight safety.",
+                "keywords": [
+                    "aeronautical",
+                    "regulations",
+                    "aerodynamics"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-2-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 2.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-2-3",
+                "text": "Describe the practical application of Aeronautical Decision-Making during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Pilots Handbook of Aeronautical Knowledge",
+        "chapterId": 3,
+        "summary": "This chapter covers Aircraft Construction. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pil-3-1",
+                "text": "Explain the core principles of Aircraft Construction and how they affect flight safety.",
+                "keywords": [
+                    "aircraft",
+                    "regulations",
+                    "aerodynamics"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-3-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 3.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-3-3",
+                "text": "Describe the practical application of Aircraft Construction during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Pilots Handbook of Aeronautical Knowledge",
+        "chapterId": 4,
+        "summary": "This chapter covers Principles of Flight. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pil-4-1",
+                "text": "Explain the core principles of Principles of Flight and how they affect flight safety.",
+                "keywords": [
+                    "principles",
+                    "regulations",
+                    "aerodynamics"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-4-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 4.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-4-3",
+                "text": "Describe the practical application of Principles of Flight during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Pilots Handbook of Aeronautical Knowledge",
+        "chapterId": 5,
+        "summary": "This chapter covers Aerodynamics of Flight. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pil-5-1",
+                "text": "Explain the core principles of Aerodynamics of Flight and how they affect flight safety.",
+                "keywords": [
+                    "aerodynamics",
+                    "regulations",
+                    "aerodynamics"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-5-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 5.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-5-3",
+                "text": "Describe the practical application of Aerodynamics of Flight during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Pilots Handbook of Aeronautical Knowledge",
+        "chapterId": 6,
+        "summary": "This chapter covers Flight Controls. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pil-6-1",
+                "text": "Explain the core principles of Flight Controls and how they affect flight safety.",
+                "keywords": [
+                    "flight",
+                    "regulations",
+                    "aerodynamics"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-6-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 6.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-6-3",
+                "text": "Describe the practical application of Flight Controls during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Pilots Handbook of Aeronautical Knowledge",
+        "chapterId": 7,
+        "summary": "This chapter covers Aircraft Systems. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pil-7-1",
+                "text": "Explain the core principles of Aircraft Systems and how they affect flight safety.",
+                "keywords": [
+                    "aircraft",
+                    "regulations",
+                    "aerodynamics"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-7-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 7.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-7-3",
+                "text": "Describe the practical application of Aircraft Systems during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Pilots Handbook of Aeronautical Knowledge",
+        "chapterId": 8,
+        "summary": "This chapter covers Flight Instruments. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pil-8-1",
+                "text": "Explain the core principles of Flight Instruments and how they affect flight safety.",
+                "keywords": [
+                    "flight",
+                    "regulations",
+                    "aerodynamics"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-8-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 8.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-8-3",
+                "text": "Describe the practical application of Flight Instruments during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Pilots Handbook of Aeronautical Knowledge",
+        "chapterId": 9,
+        "summary": "This chapter covers Flight Manuals and Other Documents. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pil-9-1",
+                "text": "Explain the core principles of Flight Manuals and Other Documents and how they affect flight safety.",
+                "keywords": [
+                    "flight",
+                    "regulations",
+                    "aerodynamics"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-9-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 9.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-9-3",
+                "text": "Describe the practical application of Flight Manuals and Other Documents during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Pilots Handbook of Aeronautical Knowledge",
+        "chapterId": 10,
+        "summary": "This chapter covers Weight and Balance. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pil-10-1",
+                "text": "Explain the core principles of Weight and Balance and how they affect flight safety.",
+                "keywords": [
+                    "weight",
+                    "regulations",
+                    "aerodynamics"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-10-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 10.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-10-3",
+                "text": "Describe the practical application of Weight and Balance during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Pilots Handbook of Aeronautical Knowledge",
+        "chapterId": 11,
+        "summary": "This chapter covers Aircraft Performance. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pil-11-1",
+                "text": "Explain the core principles of Aircraft Performance and how they affect flight safety.",
+                "keywords": [
+                    "aircraft",
+                    "regulations",
+                    "aerodynamics"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-11-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 11.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-11-3",
+                "text": "Describe the practical application of Aircraft Performance during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Pilots Handbook of Aeronautical Knowledge",
+        "chapterId": 12,
+        "summary": "This chapter covers Weather Theory. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pil-12-1",
+                "text": "Explain the core principles of Weather Theory and how they affect flight safety.",
+                "keywords": [
+                    "weather",
+                    "regulations",
+                    "aerodynamics"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-12-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 12.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-12-3",
+                "text": "Describe the practical application of Weather Theory during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Pilots Handbook of Aeronautical Knowledge",
+        "chapterId": 13,
+        "summary": "This chapter covers Aviation Weather Services. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pil-13-1",
+                "text": "Explain the core principles of Aviation Weather Services and how they affect flight safety.",
+                "keywords": [
+                    "aviation",
+                    "regulations",
+                    "aerodynamics"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-13-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 13.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-13-3",
+                "text": "Describe the practical application of Aviation Weather Services during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Pilots Handbook of Aeronautical Knowledge",
+        "chapterId": 14,
+        "summary": "This chapter covers Airport Operations. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pil-14-1",
+                "text": "Explain the core principles of Airport Operations and how they affect flight safety.",
+                "keywords": [
+                    "airport",
+                    "regulations",
+                    "aerodynamics"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-14-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 14.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-14-3",
+                "text": "Describe the practical application of Airport Operations during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Pilots Handbook of Aeronautical Knowledge",
+        "chapterId": 15,
+        "summary": "This chapter covers Airspace. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pil-15-1",
+                "text": "Explain the core principles of Airspace and how they affect flight safety.",
+                "keywords": [
+                    "airspace",
+                    "regulations",
+                    "aerodynamics"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-15-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 15.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-15-3",
+                "text": "Describe the practical application of Airspace during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Pilots Handbook of Aeronautical Knowledge",
+        "chapterId": 16,
+        "summary": "This chapter covers Navigation. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pil-16-1",
+                "text": "Explain the core principles of Navigation and how they affect flight safety.",
+                "keywords": [
+                    "navigation",
+                    "regulations",
+                    "aerodynamics"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-16-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 16.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-16-3",
+                "text": "Describe the practical application of Navigation during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Pilots Handbook of Aeronautical Knowledge",
+        "chapterId": 17,
+        "summary": "This chapter covers Aeromedical Factors. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pil-17-1",
+                "text": "Explain the core principles of Aeromedical Factors and how they affect flight safety.",
+                "keywords": [
+                    "aeromedical",
+                    "regulations",
+                    "aerodynamics"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-17-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 17.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pil-17-3",
+                "text": "Describe the practical application of Aeromedical Factors during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Plane Sense",
+        "chapterId": 1,
+        "summary": "This chapter covers Aircraft Owner Responsibilities. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pla-1-1",
+                "text": "Explain the core principles of Aircraft Owner Responsibilities and how they affect flight safety.",
+                "keywords": [
+                    "aircraft",
+                    "rules",
+                    "principles"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pla-1-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 1.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pla-1-3",
+                "text": "Describe the practical application of Aircraft Owner Responsibilities during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Plane Sense",
+        "chapterId": 2,
+        "summary": "This chapter covers Buying an Aircraft. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pla-2-1",
+                "text": "Explain the core principles of Buying an Aircraft and how they affect flight safety.",
+                "keywords": [
+                    "buying",
+                    "rules",
+                    "principles"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pla-2-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 2.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pla-2-3",
+                "text": "Describe the practical application of Buying an Aircraft during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Plane Sense",
+        "chapterId": 3,
+        "summary": "This chapter covers Airworthiness Certificate. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pla-3-1",
+                "text": "Explain the core principles of Airworthiness Certificate and how they affect flight safety.",
+                "keywords": [
+                    "airworthiness",
+                    "rules",
+                    "principles"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pla-3-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 3.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pla-3-3",
+                "text": "Describe the practical application of Airworthiness Certificate during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Plane Sense",
+        "chapterId": 4,
+        "summary": "This chapter covers Aircraft Registration. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pla-4-1",
+                "text": "Explain the core principles of Aircraft Registration and how they affect flight safety.",
+                "keywords": [
+                    "aircraft",
+                    "rules",
+                    "principles"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pla-4-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 4.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pla-4-3",
+                "text": "Describe the practical application of Aircraft Registration during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Plane Sense",
+        "chapterId": 5,
+        "summary": "This chapter covers Special Flight Permits. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pla-5-1",
+                "text": "Explain the core principles of Special Flight Permits and how they affect flight safety.",
+                "keywords": [
+                    "special",
+                    "rules",
+                    "principles"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pla-5-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 5.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pla-5-3",
+                "text": "Describe the practical application of Special Flight Permits during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Plane Sense",
+        "chapterId": 7,
+        "summary": "This chapter covers Aircraft Maintenance. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pla-7-1",
+                "text": "Explain the core principles of Aircraft Maintenance and how they affect flight safety.",
+                "keywords": [
+                    "aircraft",
+                    "rules",
+                    "principles"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pla-7-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 7.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pla-7-3",
+                "text": "Describe the practical application of Aircraft Maintenance during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Plane Sense",
+        "chapterId": 8,
+        "summary": "This chapter covers Aircraft Maintenance Records. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pla-8-1",
+                "text": "Explain the core principles of Aircraft Maintenance Records and how they affect flight safety.",
+                "keywords": [
+                    "aircraft",
+                    "rules",
+                    "principles"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pla-8-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 8.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pla-8-3",
+                "text": "Describe the practical application of Aircraft Maintenance Records during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Plane Sense",
+        "chapterId": 9,
+        "summary": "This chapter covers Airworthiness Directives. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pla-9-1",
+                "text": "Explain the core principles of Airworthiness Directives and how they affect flight safety.",
+                "keywords": [
+                    "airworthiness",
+                    "rules",
+                    "principles"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pla-9-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 9.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pla-9-3",
+                "text": "Describe the practical application of Airworthiness Directives during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Plane Sense",
+        "chapterId": 10,
+        "summary": "This chapter covers Service Difficulty Program. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pla-10-1",
+                "text": "Explain the core principles of Service Difficulty Program and how they affect flight safety.",
+                "keywords": [
+                    "service",
+                    "rules",
+                    "principles"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pla-10-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 10.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pla-10-3",
+                "text": "Describe the practical application of Service Difficulty Program during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Plane Sense",
+        "chapterId": 11,
+        "summary": "This chapter covers Obtaining FAA Publications and Records. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Pla-11-1",
+                "text": "Explain the core principles of Obtaining FAA Publications and Records and how they affect flight safety.",
+                "keywords": [
+                    "obtaining",
+                    "rules",
+                    "principles"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pla-11-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 11.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Pla-11-3",
+                "text": "Describe the practical application of Obtaining FAA Publications and Records during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Risk-Management-Handbook",
+        "chapterId": 1,
+        "summary": "This chapter covers Introduction to Risk Management. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ris-1-1",
+                "text": "Explain the core principles of Introduction to Risk Management and how they affect flight safety.",
+                "keywords": [
+                    "introduction",
+                    "Pave",
+                    "IMSAFE"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ris-1-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 1.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ris-1-3",
+                "text": "Describe the practical application of Introduction to Risk Management during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Risk-Management-Handbook",
+        "chapterId": 2,
+        "summary": "This chapter covers Personal Minimums. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ris-2-1",
+                "text": "Explain the core principles of Personal Minimums and how they affect flight safety.",
+                "keywords": [
+                    "personal",
+                    "Pave",
+                    "IMSAFE"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ris-2-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 2.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ris-2-3",
+                "text": "Describe the practical application of Personal Minimums during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Risk-Management-Handbook",
+        "chapterId": 3,
+        "summary": "This chapter covers Identifying Hazards & Associated Risks. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ris-3-1",
+                "text": "Explain the core principles of Identifying Hazards & Associated Risks and how they affect flight safety.",
+                "keywords": [
+                    "identifying",
+                    "Pave",
+                    "IMSAFE"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ris-3-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 3.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ris-3-3",
+                "text": "Describe the practical application of Identifying Hazards & Associated Risks during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Risk-Management-Handbook",
+        "chapterId": 4,
+        "summary": "This chapter covers Assessing Risk. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ris-4-1",
+                "text": "Explain the core principles of Assessing Risk and how they affect flight safety.",
+                "keywords": [
+                    "assessing",
+                    "Pave",
+                    "IMSAFE"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ris-4-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 4.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ris-4-3",
+                "text": "Describe the practical application of Assessing Risk during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Risk-Management-Handbook",
+        "chapterId": 5,
+        "summary": "This chapter covers Mitigating Risk. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ris-5-1",
+                "text": "Explain the core principles of Mitigating Risk and how they affect flight safety.",
+                "keywords": [
+                    "mitigating",
+                    "Pave",
+                    "IMSAFE"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ris-5-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 5.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ris-5-3",
+                "text": "Describe the practical application of Mitigating Risk during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Risk-Management-Handbook",
+        "chapterId": 6,
+        "summary": "This chapter covers Threat and Error Management. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ris-6-1",
+                "text": "Explain the core principles of Threat and Error Management and how they affect flight safety.",
+                "keywords": [
+                    "threat",
+                    "Pave",
+                    "IMSAFE"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ris-6-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 6.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ris-6-3",
+                "text": "Describe the practical application of Threat and Error Management during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Risk-Management-Handbook",
+        "chapterId": 7,
+        "summary": "This chapter covers Automation & Flight Path Management. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ris-7-1",
+                "text": "Explain the core principles of Automation & Flight Path Management and how they affect flight safety.",
+                "keywords": [
+                    "automation",
+                    "Pave",
+                    "IMSAFE"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ris-7-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 7.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ris-7-3",
+                "text": "Describe the practical application of Automation & Flight Path Management during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Risk-Management-Handbook",
+        "chapterId": 8,
+        "summary": "This chapter covers Aeronautical Decision-Making in Flight. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Ris-8-1",
+                "text": "Explain the core principles of Aeronautical Decision-Making in Flight and how they affect flight safety.",
+                "keywords": [
+                    "aeronautical",
+                    "Pave",
+                    "IMSAFE"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ris-8-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 8.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Ris-8-3",
+                "text": "Describe the practical application of Aeronautical Decision-Making in Flight during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 1,
+        "summary": "This chapter covers Introduction. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-1-1",
+                "text": "Explain the core principles of Introduction and how they affect flight safety.",
+                "keywords": [
+                    "introduction",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-1-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 1.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-1-3",
+                "text": "Describe the practical application of Introduction during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 2,
+        "summary": "This chapter covers Aviation Weather Service Program. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-2-1",
+                "text": "Explain the core principles of Aviation Weather Service Program and how they affect flight safety.",
+                "keywords": [
+                    "aviation",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-2-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 2.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-2-3",
+                "text": "Describe the practical application of Aviation Weather Service Program during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 3,
+        "summary": "This chapter covers Overview of Aviation Weather Information. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-3-1",
+                "text": "Explain the core principles of Overview of Aviation Weather Information and how they affect flight safety.",
+                "keywords": [
+                    "overview",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-3-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 3.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-3-3",
+                "text": "Describe the practical application of Overview of Aviation Weather Information during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 4,
+        "summary": "This chapter covers The Earth\u2019s Atmosphere. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-4-1",
+                "text": "Explain the core principles of The Earth\u2019s Atmosphere and how they affect flight safety.",
+                "keywords": [
+                    "the",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-4-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 4.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-4-3",
+                "text": "Describe the practical application of The Earth\u2019s Atmosphere during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 5,
+        "summary": "This chapter covers Heat and Temperature. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-5-1",
+                "text": "Explain the core principles of Heat and Temperature and how they affect flight safety.",
+                "keywords": [
+                    "heat",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-5-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 5.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-5-3",
+                "text": "Describe the practical application of Heat and Temperature during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 6,
+        "summary": "This chapter covers Water Vapor. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-6-1",
+                "text": "Explain the core principles of Water Vapor and how they affect flight safety.",
+                "keywords": [
+                    "water",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-6-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 6.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-6-3",
+                "text": "Describe the practical application of Water Vapor during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 7,
+        "summary": "This chapter covers Earth-Atmosphere Heat Imbalances. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-7-1",
+                "text": "Explain the core principles of Earth-Atmosphere Heat Imbalances and how they affect flight safety.",
+                "keywords": [
+                    "earth-atmosphere",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-7-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 7.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-7-3",
+                "text": "Describe the practical application of Earth-Atmosphere Heat Imbalances during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 8,
+        "summary": "This chapter covers Atmospheric Pressure and Altimetry. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-8-1",
+                "text": "Explain the core principles of Atmospheric Pressure and Altimetry and how they affect flight safety.",
+                "keywords": [
+                    "atmospheric",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-8-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 8.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-8-3",
+                "text": "Describe the practical application of Atmospheric Pressure and Altimetry during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 9,
+        "summary": "This chapter covers Global Circulations and Jet Streams. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-9-1",
+                "text": "Explain the core principles of Global Circulations and Jet Streams and how they affect flight safety.",
+                "keywords": [
+                    "global",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-9-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 9.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-9-3",
+                "text": "Describe the practical application of Global Circulations and Jet Streams during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 10,
+        "summary": "This chapter covers Wind. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-10-1",
+                "text": "Explain the core principles of Wind and how they affect flight safety.",
+                "keywords": [
+                    "wind",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-10-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 10.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-10-3",
+                "text": "Describe the practical application of Wind during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 11,
+        "summary": "This chapter covers Air Masses, Fronts, and the Wave Cyclone Model. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-11-1",
+                "text": "Explain the core principles of Air Masses, Fronts, and the Wave Cyclone Model and how they affect flight safety.",
+                "keywords": [
+                    "air",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-11-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 11.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-11-3",
+                "text": "Describe the practical application of Air Masses, Fronts, and the Wave Cyclone Model during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 12,
+        "summary": "This chapter covers Vertical Motion and Clouds. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-12-1",
+                "text": "Explain the core principles of Vertical Motion and Clouds and how they affect flight safety.",
+                "keywords": [
+                    "vertical",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-12-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 12.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-12-3",
+                "text": "Describe the practical application of Vertical Motion and Clouds during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 13,
+        "summary": "This chapter covers Atmospheric Stability. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-13-1",
+                "text": "Explain the core principles of Atmospheric Stability and how they affect flight safety.",
+                "keywords": [
+                    "atmospheric",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-13-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 13.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-13-3",
+                "text": "Describe the practical application of Atmospheric Stability during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 14,
+        "summary": "This chapter covers Precipitation. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-14-1",
+                "text": "Explain the core principles of Precipitation and how they affect flight safety.",
+                "keywords": [
+                    "precipitation",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-14-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 14.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-14-3",
+                "text": "Describe the practical application of Precipitation during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 15,
+        "summary": "This chapter covers Weather Radar. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-15-1",
+                "text": "Explain the core principles of Weather Radar and how they affect flight safety.",
+                "keywords": [
+                    "weather",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-15-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 15.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-15-3",
+                "text": "Describe the practical application of Weather Radar during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 16,
+        "summary": "This chapter covers Mountain Weather. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-16-1",
+                "text": "Explain the core principles of Mountain Weather and how they affect flight safety.",
+                "keywords": [
+                    "mountain",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-16-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 16.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-16-3",
+                "text": "Describe the practical application of Mountain Weather during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 17,
+        "summary": "This chapter covers Tropical Weather. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-17-1",
+                "text": "Explain the core principles of Tropical Weather and how they affect flight safety.",
+                "keywords": [
+                    "tropical",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-17-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 17.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-17-3",
+                "text": "Describe the practical application of Tropical Weather during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 18,
+        "summary": "This chapter covers Weather and Obstructions to Visibility. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-18-1",
+                "text": "Explain the core principles of Weather and Obstructions to Visibility and how they affect flight safety.",
+                "keywords": [
+                    "weather",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-18-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 18.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-18-3",
+                "text": "Describe the practical application of Weather and Obstructions to Visibility during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 19,
+        "summary": "This chapter covers Turbulence. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-19-1",
+                "text": "Explain the core principles of Turbulence and how they affect flight safety.",
+                "keywords": [
+                    "turbulence",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-19-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 19.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-19-3",
+                "text": "Describe the practical application of Turbulence during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 20,
+        "summary": "This chapter covers Icing. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-20-1",
+                "text": "Explain the core principles of Icing and how they affect flight safety.",
+                "keywords": [
+                    "icing",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-20-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 20.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-20-3",
+                "text": "Describe the practical application of Icing during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 21,
+        "summary": "This chapter covers Arctic Weather. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-21-1",
+                "text": "Explain the core principles of Arctic Weather and how they affect flight safety.",
+                "keywords": [
+                    "arctic",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-21-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 21.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-21-3",
+                "text": "Describe the practical application of Arctic Weather during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 22,
+        "summary": "This chapter covers Thunderstorms. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-22-1",
+                "text": "Explain the core principles of Thunderstorms and how they affect flight safety.",
+                "keywords": [
+                    "thunderstorms",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-22-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 22.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-22-3",
+                "text": "Describe the practical application of Thunderstorms during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 23,
+        "summary": "This chapter covers Space Weather. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-23-1",
+                "text": "Explain the core principles of Space Weather and how they affect flight safety.",
+                "keywords": [
+                    "space",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-23-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 23.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-23-3",
+                "text": "Describe the practical application of Space Weather during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 24,
+        "summary": "This chapter covers Observations. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-24-1",
+                "text": "Explain the core principles of Observations and how they affect flight safety.",
+                "keywords": [
+                    "observations",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-24-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 24.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-24-3",
+                "text": "Describe the practical application of Observations during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 25,
+        "summary": "This chapter covers Analysis. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-25-1",
+                "text": "Explain the core principles of Analysis and how they affect flight safety.",
+                "keywords": [
+                    "analysis",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-25-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 25.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-25-3",
+                "text": "Describe the practical application of Analysis during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 26,
+        "summary": "This chapter covers Advisories. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-26-1",
+                "text": "Explain the core principles of Advisories and how they affect flight safety.",
+                "keywords": [
+                    "advisories",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-26-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 26.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-26-3",
+                "text": "Describe the practical application of Advisories during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 27,
+        "summary": "This chapter covers Forecasts. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-27-1",
+                "text": "Explain the core principles of Forecasts and how they affect flight safety.",
+                "keywords": [
+                    "forecasts",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-27-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 27.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-27-3",
+                "text": "Describe the practical application of Forecasts during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weather Handbook",
+        "chapterId": 28,
+        "summary": "This chapter covers Aviation Weather Tools. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wea-28-1",
+                "text": "Explain the core principles of Aviation Weather Tools and how they affect flight safety.",
+                "keywords": [
+                    "aviation",
+                    "pressure",
+                    "atmosphere"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-28-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 28.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wea-28-3",
+                "text": "Describe the practical application of Aviation Weather Tools during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weight-Balance Handbook",
+        "chapterId": 1,
+        "summary": "This chapter covers Weight and Balance Control. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wei-1-1",
+                "text": "Explain the core principles of Weight and Balance Control and how they affect flight safety.",
+                "keywords": [
+                    "weight",
+                    "center of gravity",
+                    "datum"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wei-1-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 1.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wei-1-3",
+                "text": "Describe the practical application of Weight and Balance Control during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weight-Balance Handbook",
+        "chapterId": 2,
+        "summary": "This chapter covers Weight and Balance Theory. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wei-2-1",
+                "text": "Explain the core principles of Weight and Balance Theory and how they affect flight safety.",
+                "keywords": [
+                    "weight",
+                    "center of gravity",
+                    "datum"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wei-2-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 2.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wei-2-3",
+                "text": "Describe the practical application of Weight and Balance Theory during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weight-Balance Handbook",
+        "chapterId": 3,
+        "summary": "This chapter covers Weighing the Aircraft and Determining the. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wei-3-1",
+                "text": "Explain the core principles of Weighing the Aircraft and Determining the and how they affect flight safety.",
+                "keywords": [
+                    "weighing",
+                    "center of gravity",
+                    "datum"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wei-3-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 3.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wei-3-3",
+                "text": "Describe the practical application of Weighing the Aircraft and Determining the during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weight-Balance Handbook",
+        "chapterId": 4,
+        "summary": "This chapter covers Sporty\u2019s Pilot Shop, for image of an E6B Flight Computer used in Chapter 10. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wei-4-1",
+                "text": "Explain the core principles of Sporty\u2019s Pilot Shop, for image of an E6B Flight Computer used in Chapter 10 and how they affect flight safety.",
+                "keywords": [
+                    "sporty\u2019s",
+                    "center of gravity",
+                    "datum"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wei-4-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 4.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wei-4-3",
+                "text": "Describe the practical application of Sporty\u2019s Pilot Shop, for image of an E6B Flight Computer used in Chapter 10 during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weight-Balance Handbook",
+        "chapterId": 5,
+        "summary": "This chapter covers Single-Engine Aircraft Weight and Balance. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wei-5-1",
+                "text": "Explain the core principles of Single-Engine Aircraft Weight and Balance and how they affect flight safety.",
+                "keywords": [
+                    "single-engine",
+                    "center of gravity",
+                    "datum"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wei-5-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 5.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wei-5-3",
+                "text": "Describe the practical application of Single-Engine Aircraft Weight and Balance during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weight-Balance Handbook",
+        "chapterId": 6,
+        "summary": "This chapter covers Multiengine Aircraft Weight and Balance. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wei-6-1",
+                "text": "Explain the core principles of Multiengine Aircraft Weight and Balance and how they affect flight safety.",
+                "keywords": [
+                    "multiengine",
+                    "center of gravity",
+                    "datum"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wei-6-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 6.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wei-6-3",
+                "text": "Describe the practical application of Multiengine Aircraft Weight and Balance during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weight-Balance Handbook",
+        "chapterId": 7,
+        "summary": "This chapter covers Center of Gravity Change After a. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wei-7-1",
+                "text": "Explain the core principles of Center of Gravity Change After a and how they affect flight safety.",
+                "keywords": [
+                    "center",
+                    "center of gravity",
+                    "datum"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wei-7-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 7.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wei-7-3",
+                "text": "Describe the practical application of Center of Gravity Change After a during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weight-Balance Handbook",
+        "chapterId": 8,
+        "summary": "This chapter covers Weight and Balance Control\u2014Helicopter. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wei-8-1",
+                "text": "Explain the core principles of Weight and Balance Control\u2014Helicopter and how they affect flight safety.",
+                "keywords": [
+                    "weight",
+                    "center of gravity",
+                    "datum"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wei-8-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 8.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wei-8-3",
+                "text": "Describe the practical application of Weight and Balance Control\u2014Helicopter during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weight-Balance Handbook",
+        "chapterId": 9,
+        "summary": "This chapter covers Weight and Balance Control\u2014Commuter. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wei-9-1",
+                "text": "Explain the core principles of Weight and Balance Control\u2014Commuter and how they affect flight safety.",
+                "keywords": [
+                    "weight",
+                    "center of gravity",
+                    "datum"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wei-9-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 9.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wei-9-3",
+                "text": "Describe the practical application of Weight and Balance Control\u2014Commuter during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "Weight-Balance Handbook",
+        "chapterId": 10,
+        "summary": "This chapter covers Use of Computer for Weight and Balance. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "Wei-10-1",
+                "text": "Explain the core principles of Use of Computer for Weight and Balance and how they affect flight safety.",
+                "keywords": [
+                    "use",
+                    "center of gravity",
+                    "datum"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wei-10-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 10.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "Wei-10-3",
+                "text": "Describe the practical application of Use of Computer for Weight and Balance during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "aviation instructors handbook",
+        "chapterId": 1,
+        "summary": "This chapter covers Risk Management and Single-Pilot Resource Management. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "avi-1-1",
+                "text": "Explain the core principles of Risk Management and Single-Pilot Resource Management and how they affect flight safety.",
+                "keywords": [
+                    "risk",
+                    "rules",
+                    "principles"
+                ],
+                "checked": false
+            },
+            {
+                "id": "avi-1-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 1.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "avi-1-3",
+                "text": "Describe the practical application of Risk Management and Single-Pilot Resource Management during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "aviation instructors handbook",
+        "chapterId": 2,
+        "summary": "This chapter covers Human Behavior. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "avi-2-1",
+                "text": "Explain the core principles of Human Behavior and how they affect flight safety.",
+                "keywords": [
+                    "human",
+                    "rules",
+                    "principles"
+                ],
+                "checked": false
+            },
+            {
+                "id": "avi-2-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 2.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "avi-2-3",
+                "text": "Describe the practical application of Human Behavior during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "aviation instructors handbook",
+        "chapterId": 3,
+        "summary": "This chapter covers The Learning Process. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "avi-3-1",
+                "text": "Explain the core principles of The Learning Process and how they affect flight safety.",
+                "keywords": [
+                    "the",
+                    "rules",
+                    "principles"
+                ],
+                "checked": false
+            },
+            {
+                "id": "avi-3-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 3.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "avi-3-3",
+                "text": "Describe the practical application of The Learning Process during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "aviation instructors handbook",
+        "chapterId": 4,
+        "summary": "This chapter covers Effective Communication. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "avi-4-1",
+                "text": "Explain the core principles of Effective Communication and how they affect flight safety.",
+                "keywords": [
+                    "effective",
+                    "rules",
+                    "principles"
+                ],
+                "checked": false
+            },
+            {
+                "id": "avi-4-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 4.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "avi-4-3",
+                "text": "Describe the practical application of Effective Communication during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "aviation instructors handbook",
+        "chapterId": 5,
+        "summary": "This chapter covers The Teaching Process. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "avi-5-1",
+                "text": "Explain the core principles of The Teaching Process and how they affect flight safety.",
+                "keywords": [
+                    "the",
+                    "rules",
+                    "principles"
+                ],
+                "checked": false
+            },
+            {
+                "id": "avi-5-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 5.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "avi-5-3",
+                "text": "Describe the practical application of The Teaching Process during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "aviation instructors handbook",
+        "chapterId": 6,
+        "summary": "This chapter covers Assessment. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "avi-6-1",
+                "text": "Explain the core principles of Assessment and how they affect flight safety.",
+                "keywords": [
+                    "assessment",
+                    "rules",
+                    "principles"
+                ],
+                "checked": false
+            },
+            {
+                "id": "avi-6-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 6.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "avi-6-3",
+                "text": "Describe the practical application of Assessment during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "aviation instructors handbook",
+        "chapterId": 7,
+        "summary": "This chapter covers Planning Instructional Activity. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "avi-7-1",
+                "text": "Explain the core principles of Planning Instructional Activity and how they affect flight safety.",
+                "keywords": [
+                    "planning",
+                    "rules",
+                    "principles"
+                ],
+                "checked": false
+            },
+            {
+                "id": "avi-7-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 7.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "avi-7-3",
+                "text": "Describe the practical application of Planning Instructional Activity during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "aviation instructors handbook",
+        "chapterId": 8,
+        "summary": "This chapter covers Aviation Instructor Responsibilities and Professionalism. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "avi-8-1",
+                "text": "Explain the core principles of Aviation Instructor Responsibilities and Professionalism and how they affect flight safety.",
+                "keywords": [
+                    "aviation",
+                    "rules",
+                    "principles"
+                ],
+                "checked": false
+            },
+            {
+                "id": "avi-8-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 8.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "avi-8-3",
+                "text": "Describe the practical application of Aviation Instructor Responsibilities and Professionalism during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "aviation instructors handbook",
+        "chapterId": 9,
+        "summary": "This chapter covers Techniques of Flight Instruction. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "avi-9-1",
+                "text": "Explain the core principles of Techniques of Flight Instruction and how they affect flight safety.",
+                "keywords": [
+                    "techniques",
+                    "rules",
+                    "principles"
+                ],
+                "checked": false
+            },
+            {
+                "id": "avi-9-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 9.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "avi-9-3",
+                "text": "Describe the practical application of Techniques of Flight Instruction during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    },
+    {
+        "bookTitle": "aviation instructors handbook",
+        "chapterId": 10,
+        "summary": "This chapter covers Teaching Practical Risk Management during Flight Instruction. Focus on how these concepts integrate with overall aeronautical knowledge.",
+        "keyPoints": [
+            {
+                "id": "avi-10-1",
+                "text": "Explain the core principles of Teaching Practical Risk Management during Flight Instruction and how they affect flight safety.",
+                "keywords": [
+                    "teaching",
+                    "rules",
+                    "principles"
+                ],
+                "checked": false
+            },
+            {
+                "id": "avi-10-2",
+                "text": "Recall at least three critical regulations or procedures mentioned in Chapter 10.",
+                "keywords": [
+                    "regulation",
+                    "procedure",
+                    "rule",
+                    "standard"
+                ],
+                "checked": false
+            },
+            {
+                "id": "avi-10-3",
+                "text": "Describe the practical application of Teaching Practical Risk Management during Flight Instruction during a typical flight mission.",
+                "keywords": [
+                    "flight",
+                    "pilot",
+                    "application",
+                    "operation"
+                ],
+                "checked": false
+            }
+        ]
+    }
+]

@@ -181,7 +181,7 @@ export default function Dashboard() {
                         </div>
                       </div>
                       <Link 
-                        href={`/quiz/${encodeURIComponent(selectedBook.title)}/${chapter.id}`}
+                        href={`/checkpoint/${encodeURIComponent(selectedBook.title)}/${chapter.id}`}
                         className="p-2 text-blue-600 hover:bg-white rounded-full transition-all shadow-sm border border-transparent hover:border-blue-200"
                       >
                         <PlayCircle size={24} />
@@ -299,23 +299,25 @@ function ScheduleColumn({ title, subtitle, level, progress }: { title: string, s
 
                         const [book, chapter] = key.split('-');
 
-                        return (
+                                                return (
 
-                            <Link 
+                                                    <Link 
 
-                                key={key}
+                                                        key={key}
 
-                                href={`/quiz/${encodeURIComponent(book)}/${chapter}`}
+                                                        href={`/checkpoint/${encodeURIComponent(book)}/${chapter}`}
 
-                                className="block p-2 rounded bg-blue-50 text-blue-700 text-xs font-medium hover:bg-blue-100 border border-blue-100"
+                                                        className="block p-2 rounded bg-blue-50 text-blue-700 text-xs font-medium hover:bg-blue-100 border border-blue-100"
 
-                            >
+                                                    >
 
-                                {book.substring(0, 15)}... - Ch {chapter}
+                                                        {book.substring(0, 15)}... - Ch {chapter}
 
-                            </Link>
+                                                    </Link>
 
-                        );
+                                                );
+
+                        
 
                     })
 
