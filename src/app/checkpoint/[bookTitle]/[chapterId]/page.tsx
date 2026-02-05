@@ -120,8 +120,10 @@ export default function CheckpointPage() {
     if (isRecording) {
       recognition.stop();
       setIsRecording(false);
-      // Automatically ask Gemini when recording stops
-      setTimeout(askStudyPartner, 500);
+      // Wait a moment for any final "interim" results to move into the ref
+      setTimeout(() => {
+        askStudyPartner();
+      }, 800);
     } else {
       fullTranscriptRef.current = '';
       setTranscript('');

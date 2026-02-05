@@ -39,15 +39,23 @@ export async function analyzeRecall(params: {
     const response = await result.response;
     const text = response.text();
     
-    // Clean JSON from potential markdown blocks
-    const cleanJson = text.replace(/```json|```/g, "").trim();
+    // Find the first { and last } to extract JSON even if there's markdown or text around it
+    const startIdx = text.indexOf('{');
+    const endIdx = text.lastIndexOf('}');
+    
+    if (startIdx === -1 || endIdx === -1) {
+      throw new Error("Could not find JSON in response");
+    }
+
+    const cleanJson = text.substring(startIdx, endIdx + 1);
     return JSON.parse(cleanJson);
   } catch (error) {
     console.error("Gemini Analysis Error:", error);
+    // Return a more descriptive error if possible
     return {
       coveredPointIds: [],
-      feedback: "I had trouble listening just now.",
-      clue: "Try summarizing that last part again for me?"
+      feedback: "I'm here, but I had a slight sync issue. Try summarizing one more time?",
+      clue: "Sometimes I miss things if the connection drops. Can you repeat your last point about " + (params.keyPoints[0]?.text.split(' ')[0] || "this chapter") + "?"
     };
   }
 }
