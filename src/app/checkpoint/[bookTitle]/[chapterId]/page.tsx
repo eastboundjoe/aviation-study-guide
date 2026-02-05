@@ -5,8 +5,9 @@ import { useParams, useRouter } from 'next/navigation';
 import checkpointsData from '@/data/checkpoints.json';
 import booksData from '@/data/books.json';
 import { useProgress } from '@/hooks/useProgress';
-import { Mic, MicOff, CheckCircle2, ChevronLeft, Volume2, Info, RefreshCw, Trophy } from 'lucide-react';
+import { Mic, MicOff, CheckCircle2, ChevronLeft, Volume2, Info, RefreshCw, Trophy, Sparkles, MessageCircle } from 'lucide-react';
 import Link from 'next/link';
+import { analyzeRecall } from '@/app/actions/study-partner';
 
 export default function CheckpointPage() {
   const params = useParams();
@@ -23,6 +24,9 @@ export default function CheckpointPage() {
   const [isFinished, setIsFinished] = useState(false);
   const [showSummary, setShowSummary] = useState(false);
   const [recognition, setRecognition] = useState<any>(null);
+  const [isAnalyzing, setIsAnalyzing] = useState(false);
+  const [aiFeedback, setAiFeedback] = useState<string | null>(null);
+  const [aiClue, setAiClue] = useState<string | null>(null);
   const fullTranscriptRef = useRef('');
 
   const checkpoint = checkpointsData.find(c => c.bookTitle === bookTitle && c.chapterId === chapterId);
@@ -33,6 +37,7 @@ export default function CheckpointPage() {
     if (checkpoint) {
       setKeyPoints(checkpoint.keyPoints.map(kp => ({ ...kp, checked: false })));
     }
+    // ... speech recognition init same as before ...
 
     if (typeof window !== 'undefined' && ('webkitSpeechRecognition' in window || 'speechRecognition' in window)) {
       const SpeechRecognition = (window as any).webkitSpeechRecognition || (window as any).speechRecognition;
@@ -87,14 +92,42 @@ export default function CheckpointPage() {
     }));
   };
 
+  const askStudyPartner = async () => {
+    if (!transcript && !interimTranscript) return;
+    setIsAnalyzing(true);
+    
+    const result = await analyzeRecall({
+      chapterTitle: chapter?.title || '',
+      bookTitle: bookTitle,
+      keyPoints: checkpoint?.keyPoints.map(kp => ({ text: kp.text, id: kp.id })) || [],
+      transcript: fullTranscriptRef.current + interimTranscript
+    });
+
+    if (result) {
+      setAiFeedback(result.feedback);
+      setAiClue(result.clue);
+      
+      // Update checked state based on AI analysis (matching IDs)
+      setKeyPoints(prev => prev.map(kp => ({
+        ...kp,
+        checked: result.coveredPointIds.includes(kp.id) || kp.checked
+      })));
+    }
+    setIsAnalyzing(false);
+  };
+
   const toggleRecording = () => {
     if (isRecording) {
       recognition.stop();
       setIsRecording(false);
+      // Automatically ask Gemini when recording stops
+      setTimeout(askStudyPartner, 500);
     } else {
       fullTranscriptRef.current = '';
       setTranscript('');
       setInterimTranscript('');
+      setAiFeedback(null);
+      setAiClue(null);
       recognition.start();
       setIsRecording(true);
     }
@@ -183,16 +216,54 @@ export default function CheckpointPage() {
               <div className="flex justify-center">
                 <button
                   onClick={toggleRecording}
+                  disabled={isAnalyzing}
                   className={`w-20 h-20 rounded-full flex items-center justify-center transition-all ${
                     isRecording 
                     ? 'bg-rose-500 text-white shadow-lg shadow-rose-200 scale-110' 
-                    : 'bg-blue-600 text-white shadow-lg shadow-blue-200 hover:bg-blue-700'
+                    : isAnalyzing 
+                      ? 'bg-slate-200 text-slate-400 cursor-wait'
+                      : 'bg-blue-600 text-white shadow-lg shadow-blue-200 hover:bg-blue-700'
                   }`}
                 >
-                  {isRecording ? <MicOff size={32} /> : <Mic size={32} />}
+                  {isRecording ? <MicOff size={32} /> : isAnalyzing ? <RefreshCw className="animate-spin" size={32} /> : <Mic size={32} />}
                 </button>
               </div>
             </div>
+
+            {/* AI Partner Response */}
+            {(aiFeedback || aiClue || isAnalyzing) && (
+              <div className="bg-gradient-to-br from-indigo-600 to-violet-700 p-8 rounded-3xl text-white shadow-xl animate-in fade-in slide-in-from-bottom-4">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-2 bg-white/20 rounded-lg">
+                    <Sparkles size={20} className="text-amber-300" />
+                  </div>
+                  <h3 className="font-bold text-lg">Gemini Study Partner</h3>
+                </div>
+                
+                {isAnalyzing ? (
+                  <div className="flex items-center gap-3 py-4">
+                    <div className="w-2 h-2 bg-white rounded-full animate-bounce"></div>
+                    <div className="w-2 h-2 bg-white rounded-full animate-bounce delay-100"></div>
+                    <div className="w-2 h-2 bg-white rounded-full animate-bounce delay-200"></div>
+                    <p className="text-sm font-medium opacity-80">Analyzing your explanation...</p>
+                  </div>
+                ) : (
+                  <div className="space-y-4">
+                    <p className="text-sm leading-relaxed text-indigo-100 italic">"{aiFeedback}"</p>
+                    <div className="bg-white/10 p-4 rounded-2xl border border-white/10">
+                      <p className="text-xs uppercase tracking-widest font-bold text-amber-300 mb-2">Instructor Clue:</p>
+                      <p className="text-base font-medium leading-relaxed">{aiClue}</p>
+                    </div>
+                    <button 
+                      onClick={toggleRecording}
+                      className="text-xs font-bold uppercase tracking-wider flex items-center gap-2 text-white hover:text-amber-300 transition-colors"
+                    >
+                      <Mic size={14} /> Resume explaining to answer the clue
+                    </button>
+                  </div>
+                )}
+              </div>
+            )}
 
             <button 
               onClick={() => setShowSummary(!showSummary)}
