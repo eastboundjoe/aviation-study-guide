@@ -18,10 +18,12 @@ export default function CheckpointPage() {
 
   const [isRecording, setIsRecording] = useState(false);
   const [transcript, setTranscript] = useState('');
+  const [interimTranscript, setInterimTranscript] = useState('');
   const [keyPoints, setKeyPoints] = useState<any[]>([]);
   const [isFinished, setIsFinished] = useState(false);
   const [showSummary, setShowSummary] = useState(false);
   const [recognition, setRecognition] = useState<any>(null);
+  const fullTranscriptRef = useRef('');
 
   const checkpoint = checkpointsData.find(c => c.bookTitle === bookTitle && c.chapterId === chapterId);
   const book = booksData.find(b => b.title === bookTitle);
@@ -32,7 +34,6 @@ export default function CheckpointPage() {
       setKeyPoints(checkpoint.keyPoints.map(kp => ({ ...kp, checked: false })));
     }
 
-    // Initialize Web Speech API
     if (typeof window !== 'undefined' && ('webkitSpeechRecognition' in window || 'speechRecognition' in window)) {
       const SpeechRecognition = (window as any).webkitSpeechRecognition || (window as any).speechRecognition;
       const rec = new SpeechRecognition();
@@ -41,16 +42,36 @@ export default function CheckpointPage() {
       rec.lang = 'en-US';
 
       rec.onresult = (event: any) => {
-        let currentTranscript = '';
+        let currentInterim = '';
         for (let i = event.resultIndex; i < event.results.length; i++) {
-          currentTranscript += event.results[i][0].transcript;
+          const result = event.results[i];
+          if (result.isFinal) {
+            fullTranscriptRef.current += result[0].transcript + ' ';
+          } else {
+            currentInterim += result[0].transcript;
+          }
         }
-        setTranscript(currentTranscript);
-        checkKeywords(currentTranscript);
+        
+        const combined = fullTranscriptRef.current + currentInterim;
+        setTranscript(fullTranscriptRef.current);
+        setInterimTranscript(currentInterim);
+        checkKeywords(combined);
+      };
+
+      rec.onerror = (event: any) => {
+        console.error('Speech recognition error:', event.error);
+        if (event.error === 'no-speech') {
+           // Keep going if it's just silence
+        } else {
+           setIsRecording(false);
+        }
       };
 
       rec.onend = () => {
-        setIsRecording(false);
+        // Only stop if we explicitly called stop
+        if (isRecording) {
+           rec.start(); // Restart if it timed out but we want to keep recording
+        }
       };
 
       setRecognition(rec);
@@ -61,7 +82,6 @@ export default function CheckpointPage() {
     const lowerText = text.toLowerCase();
     setKeyPoints(prev => prev.map(kp => {
       if (kp.checked) return kp;
-      // If any keyword is found in the transcript
       const found = kp.keywords.some((word: string) => lowerText.includes(word.toLowerCase()));
       return found ? { ...kp, checked: true } : kp;
     }));
@@ -70,8 +90,11 @@ export default function CheckpointPage() {
   const toggleRecording = () => {
     if (isRecording) {
       recognition.stop();
+      setIsRecording(false);
     } else {
+      fullTranscriptRef.current = '';
       setTranscript('');
+      setInterimTranscript('');
       recognition.start();
       setIsRecording(true);
     }
@@ -148,8 +171,11 @@ export default function CheckpointPage() {
               </p>
 
               <div className="flex-1 bg-slate-50 rounded-2xl p-6 border border-slate-100 overflow-y-auto mb-8">
-                {transcript ? (
-                  <p className="text-slate-700 leading-relaxed">{transcript}</p>
+                {transcript || interimTranscript ? (
+                  <div className="leading-relaxed">
+                    <span className="text-slate-700">{transcript}</span>
+                    <span className="text-slate-400 italic">{interimTranscript}</span>
+                  </div>
                 ) : (
                   <p className="text-slate-300 text-center py-12 italic">Your live transcript will appear here...</p>
                 )}
