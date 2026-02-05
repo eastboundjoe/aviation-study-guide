@@ -14,7 +14,7 @@ export async function synthesizeSpeech(text: string) {
     input: { text },
     voice: {
       languageCode: "en-US",
-      name: "en-US-Journey-F", 
+      name: "en-US-Journey-F", // Primary choice: Achernar
     },
     audioConfig: {
       audioEncoding: "MP3",
@@ -23,26 +23,36 @@ export async function synthesizeSpeech(text: string) {
     },
   };
 
+  const fallbackVoiceBody = {
+    ...body,
+    voice: {
+      languageCode: "en-US",
+      name: "en-US-Studio-O", // Reliable Studio fallback
+    }
+  };
+
   let lastError = null;
 
   for (const url of endpoints) {
-    try {
-      const response = await fetch(url, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(body),
-      });
+    for (const currentBody of [body, fallbackVoiceBody]) {
+      try {
+        const response = await fetch(url, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(currentBody),
+        });
 
-      const data = await response.json();
-      if (data.audioContent) {
-        return data.audioContent; 
-      } else {
-        lastError = data.error?.message || JSON.stringify(data);
-        console.warn(`TTS Endpoint ${url.includes('v1beta1') ? 'v1beta1' : 'v1'} failed:`, lastError);
+        const data = await response.json();
+        if (data.audioContent) {
+          return data.audioContent; 
+        } else {
+          lastError = data.error?.message || JSON.stringify(data);
+          console.warn(`TTS Trial (Voice: ${currentBody.voice.name}) failed:`, lastError);
+        }
+      } catch (error: any) {
+        lastError = error.message;
+        continue;
       }
-    } catch (error: any) {
-      lastError = error.message;
-      continue;
     }
   }
 
