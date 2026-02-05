@@ -11,7 +11,7 @@ import Link from 'next/link';
 export default function CheckpointPage() {
   const params = useParams();
   const router = useRouter();
-  const { markChapterComplete, updateReviewLevel } = useProgress();
+  const { completeCheckpoint } = useProgress();
   
   const bookTitle = decodeURIComponent(params.bookTitle as string);
   const chapterId = parseInt(params.chapterId as string);
@@ -102,8 +102,7 @@ export default function CheckpointPage() {
 
   const handleComplete = () => {
     const allChecked = keyPoints.every(kp => kp.checked);
-    markChapterComplete(bookTitle, chapterId);
-    updateReviewLevel(bookTitle, chapterId, allChecked);
+    completeCheckpoint(bookTitle, chapterId, allChecked);
     setIsFinished(true);
   };
 

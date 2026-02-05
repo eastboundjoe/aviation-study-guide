@@ -128,6 +128,7 @@ export default function Dashboard() {
                   : 'border-slate-200 bg-white hover:border-blue-300 hover:shadow-md'
                 }`}
               >
+                <div className="text-3xl mb-3">{book.emoji}</div>
                 <h3 className="font-bold text-slate-900 mb-1">{book.title}</h3>
                 <p className="text-sm text-slate-500">{book.chapters.length} Chapters</p>
                 <div className="mt-4 bg-slate-100 rounded-full h-2 w-full">
@@ -145,7 +146,10 @@ export default function Dashboard() {
         <div className="bg-white rounded-2xl border border-slate-200 p-6 h-fit sticky top-6">
           {selectedBook ? (
             <>
-              <h2 className="text-xl font-bold text-slate-900 mb-4">{selectedBook.title}</h2>
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">{selectedBook.emoji}</span>
+                <h2 className="text-xl font-bold text-slate-900">{selectedBook.title}</h2>
+              </div>
               <div className="space-y-3 max-h-[60vh] overflow-y-auto pr-2">
                 {selectedBook.chapters.map((chapter: any) => {
                   const isCompleted = progress.completedChapters[`${selectedBook.title}-${chapter.id}`];

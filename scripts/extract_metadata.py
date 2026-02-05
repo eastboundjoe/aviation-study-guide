@@ -75,13 +75,33 @@ def extract_chapters(file_path):
             
     return chapters
 
+def get_emoji(title):
+    mapping = {
+        "Airplane Flying Handbook": "🛩️",
+        "Instrument Flying Handbook": "仪表", # Wait, no, standard emojis
+        "Instrument Flying Handbook": "🧭",
+        "Instrument Procedures Handbook": "🗺️",
+        "Pilots Handbook of Aeronautical Knowledge": "📚",
+        "Plane Sense": "🧐",
+        "Risk-Management-Handbook": "⚠️",
+        "Weather Handbook": "🌦️",
+        "Weight-Balance Handbook": "⚖️",
+        "aviation instructors handbook": "👨‍🏫"
+    }
+    for key, emoji in mapping.items():
+        if key.lower() in title.lower():
+            return emoji
+    return "📖"
+
 all_books = []
 for book_file in book_files:
     file_path = os.path.join(books_dir, book_file)
     print(f"Processing {book_file}...")
     chapters = extract_chapters(file_path)
+    title = book_file.replace("FAA-", "").replace(".txt", "")
     all_books.append({
-        "title": book_file.replace("FAA-", "").replace(".txt", ""),
+        "title": title,
+        "emoji": get_emoji(title),
         "filename": book_file,
         "chapters": chapters
     })

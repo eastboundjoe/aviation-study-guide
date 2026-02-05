@@ -1,6 +1,7 @@
 [
     {
         "title": "Airplane Flying Handbook",
+        "emoji": "\ud83d\udee9\ufe0f",
         "filename": "FAA-Airplane Flying Handbook.txt",
         "chapters": [
             {
@@ -79,6 +80,7 @@
     },
     {
         "title": "Instrument Flying Handbook",
+        "emoji": "\ud83e\udded",
         "filename": "FAA-Instrument Flying Handbook.txt",
         "chapters": [
             {
@@ -121,6 +123,7 @@
     },
     {
         "title": "Instrument Procedures Handbook",
+        "emoji": "\ud83d\uddfa\ufe0f",
         "filename": "FAA-Instrument Procedures Handbook.txt",
         "chapters": [
             {
@@ -155,6 +158,7 @@
     },
     {
         "title": "Pilots Handbook of Aeronautical Knowledge",
+        "emoji": "\ud83d\udcda",
         "filename": "FAA-Pilots Handbook of Aeronautical Knowledge.txt",
         "chapters": [
             {
@@ -229,6 +233,7 @@
     },
     {
         "title": "Plane Sense",
+        "emoji": "\ud83e\uddd0",
         "filename": "FAA-Plane Sense.txt",
         "chapters": [
             {
@@ -275,6 +280,7 @@
     },
     {
         "title": "Risk-Management-Handbook",
+        "emoji": "\u26a0\ufe0f",
         "filename": "FAA-Risk-Management-Handbook.txt",
         "chapters": [
             {
@@ -313,6 +319,7 @@
     },
     {
         "title": "Weather Handbook",
+        "emoji": "\ud83c\udf26\ufe0f",
         "filename": "FAA-Weather Handbook.txt",
         "chapters": [
             {
@@ -431,6 +438,7 @@
     },
     {
         "title": "Weight-Balance Handbook",
+        "emoji": "\u2696\ufe0f",
         "filename": "FAA-Weight-Balance Handbook.txt",
         "chapters": [
             {
@@ -477,6 +485,7 @@
     },
     {
         "title": "aviation instructors handbook",
+        "emoji": "\ud83d\udc68\u200d\ud83c\udfeb",
         "filename": "FAA-aviation instructors handbook.txt",
         "chapters": [
             {
