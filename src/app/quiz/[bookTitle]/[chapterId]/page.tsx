@@ -21,6 +21,7 @@ export default function QuizPage() {
   const [isAnswered, setIsAnswered] = useState(false);
   const [score, setScore] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
+  const [showOptions, setShowOptions] = useState(false); // For Active Recall / Verbalization
 
   // Find the quiz for this chapter
   const quiz = quizzesData.find(q => q.bookTitle === bookTitle && q.chapterId === chapterId);
@@ -57,6 +58,7 @@ export default function QuizPage() {
       setCurrentQuestionIdx(currentQuestionIdx + 1);
       setSelectedOption(null);
       setIsAnswered(false);
+      setShowOptions(false); // Reset for next question
     } else {
       setIsFinished(true);
       markChapterComplete(bookTitle, chapterId);
@@ -86,7 +88,14 @@ export default function QuizPage() {
               <Home size={20} /> Back to Dashboard
             </button>
             <button 
-              onClick={() => window.location.reload()}
+              onClick={() => {
+                setCurrentQuestionIdx(0);
+                setScore(0);
+                setIsFinished(false);
+                setSelectedOption(null);
+                setIsAnswered(false);
+                setShowOptions(false);
+              }}
               className="w-full py-3 bg-slate-100 text-slate-700 rounded-xl font-bold hover:bg-slate-200 transition-colors"
             >
               Retry Quiz
@@ -118,40 +127,52 @@ export default function QuizPage() {
           />
         </div>
 
-        <div className="bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm min-h-[400px] flex flex-col">
+        <div className="bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm min-h-[500px] flex flex-col">
           <p className="text-sm font-bold text-blue-600 mb-4 uppercase tracking-wider">Question {currentQuestionIdx + 1} of {quiz.questions.length}</p>
           <h2 className="text-2xl font-bold text-slate-900 mb-8 leading-tight">
             {currentQuestion.question}
           </h2>
 
-          <div className="space-y-3 flex-1">
-            {currentQuestion.options.map((option, idx) => (
-              <button
-                key={idx}
-                onClick={() => handleOptionSelect(idx)}
-                className={`w-full text-left p-4 rounded-xl border-2 transition-all ${
-                  selectedOption === idx 
-                    ? isAnswered 
-                      ? idx === currentQuestion.correctAnswer 
-                        ? 'border-emerald-500 bg-emerald-50' 
-                        : 'border-rose-500 bg-rose-50'
-                      : 'border-blue-500 bg-blue-50'
-                    : isAnswered && idx === currentQuestion.correctAnswer
-                      ? 'border-emerald-500 bg-emerald-50'
-                      : 'border-slate-100 bg-slate-50 hover:border-slate-300'
-                }`}
-              >
-                <div className="flex items-center gap-3">
-                  <div className={`w-8 h-8 rounded-full border-2 flex items-center justify-center shrink-0 ${
-                    selectedOption === idx ? 'border-current' : 'border-slate-200'
-                  }`}>
-                    {String.fromCharCode(65 + idx)}
+          {!showOptions && !isAnswered ? (
+            <div className="flex-1 flex flex-col items-center justify-center text-center p-8 bg-slate-50 rounded-2xl border-2 border-dashed border-slate-200">
+               <p className="text-slate-500 mb-6 font-medium italic">Try to verbalize the answer out loud before seeing the options.</p>
+               <button 
+                 onClick={() => setShowOptions(true)}
+                 className="px-8 py-3 bg-white border border-slate-200 text-slate-900 rounded-xl font-bold shadow-sm hover:shadow-md transition-all"
+               >
+                 Show Options
+               </button>
+            </div>
+          ) : (
+            <div className="space-y-3 flex-1">
+              {currentQuestion.options.map((option, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => handleOptionSelect(idx)}
+                  className={`w-full text-left p-4 rounded-xl border-2 transition-all ${
+                    selectedOption === idx 
+                      ? isAnswered 
+                        ? idx === currentQuestion.correctAnswer 
+                          ? 'border-emerald-500 bg-emerald-50' 
+                          : 'border-rose-500 bg-rose-50'
+                        : 'border-blue-500 bg-blue-50'
+                      : isAnswered && idx === currentQuestion.correctAnswer
+                        ? 'border-emerald-500 bg-emerald-50'
+                        : 'border-slate-100 bg-slate-50 hover:border-slate-300'
+                  }`}
+                >
+                  <div className="flex items-center gap-3">
+                    <div className={`w-8 h-8 rounded-full border-2 flex items-center justify-center shrink-0 ${
+                      selectedOption === idx ? 'border-current' : 'border-slate-200'
+                    }`}>
+                      {String.fromCharCode(65 + idx)}
+                    </div>
+                    <span className="font-medium text-slate-700">{option}</span>
                   </div>
-                  <span className="font-medium text-slate-700">{option}</span>
-                </div>
-              </button>
-            ))}
-          </div>
+                </button>
+              ))}
+            </div>
+          )}
 
           {isAnswered && (
             <div className={`mt-8 p-4 rounded-xl ${selectedOption === currentQuestion.correctAnswer ? 'bg-emerald-50 text-emerald-800' : 'bg-rose-50 text-rose-800'}`}>
@@ -165,7 +186,7 @@ export default function QuizPage() {
           <div className="mt-12 flex justify-end">
             {!isAnswered ? (
               <button
-                disabled={selectedOption === null}
+                disabled={selectedOption === null || !showOptions}
                 onClick={handleCheck}
                 className="px-8 py-3 bg-slate-900 text-white rounded-xl font-bold disabled:opacity-30 transition-opacity"
               >
