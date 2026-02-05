@@ -27,7 +27,9 @@ export default function CheckpointPage() {
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [aiFeedback, setAiFeedback] = useState<string | null>(null);
   const [aiClue, setAiClue] = useState<string | null>(null);
+  const [showDebug, setShowDebug] = useState(false);
   const fullTranscriptRef = useRef('');
+  const interimRef = useRef('');
 
   const checkpoint = checkpointsData.find(c => c.bookTitle === bookTitle && c.chapterId === chapterId);
   const book = booksData.find(b => b.title === bookTitle);
@@ -37,7 +39,6 @@ export default function CheckpointPage() {
     if (checkpoint) {
       setKeyPoints(checkpoint.keyPoints.map(kp => ({ ...kp, checked: false })));
     }
-    // ... speech recognition init same as before ...
 
     if (typeof window !== 'undefined' && ('webkitSpeechRecognition' in window || 'speechRecognition' in window)) {
       const SpeechRecognition = (window as any).webkitSpeechRecognition || (window as any).speechRecognition;
@@ -57,10 +58,10 @@ export default function CheckpointPage() {
           }
         }
         
-        const combined = fullTranscriptRef.current + currentInterim;
+        interimRef.current = currentInterim;
         setTranscript(fullTranscriptRef.current);
         setInterimTranscript(currentInterim);
-        checkKeywords(combined);
+        checkKeywords(fullTranscriptRef.current + currentInterim);
       };
 
       rec.onerror = (event: any) => {
@@ -93,7 +94,7 @@ export default function CheckpointPage() {
   };
 
   const askStudyPartner = async () => {
-    const finalTranscript = fullTranscriptRef.current.trim();
+    const finalTranscript = (fullTranscriptRef.current + interimRef.current).trim();
     if (finalTranscript.length < 10) {
       setAiFeedback("I didn't hear enough to give a summary.");
       setAiClue("Try speaking a bit more about the chapter so I can track your progress.");
@@ -285,6 +286,21 @@ export default function CheckpointPage() {
                 {checkpoint.summary}
               </div>
             )}
+
+            <div className="pt-12 border-t border-slate-100">
+               <button 
+                 onClick={() => setShowDebug(!showDebug)}
+                 className="text-[10px] text-slate-300 hover:text-slate-500 uppercase tracking-widest font-bold"
+               >
+                 {showDebug ? 'Hide' : 'Show'} Debug Info
+               </button>
+               {showDebug && (
+                 <div className="mt-4 p-4 bg-slate-900 text-emerald-400 font-mono text-[10px] rounded-xl overflow-x-auto">
+                   <p className="mb-2">// SENT TO GEMINI:</p>
+                   <p className="opacity-80">"{fullTranscriptRef.current + interimRef.current}"</p>
+                 </div>
+               )}
+            </div>
           </div>
 
           {/* Key Points Side */}
