@@ -1,0 +1,50 @@
+[
+  {
+    "chapterId": 1,
+    "bookTitle": "Airplane Flying Handbook",
+    "questions": [
+      {
+        "id": "afh-1-1",
+        "question": "What is the primary purpose of the Airplane Flying Handbook?",
+        "options": [
+          "To provide regulations for commercial flight",
+          "To provide basic knowledge essential for pilots",
+          "To serve as a guide for aircraft maintenance",
+          "To list all active airports in the United States"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The Airplane Flying Handbook provides basic knowledge that is essential for pilots, assisting student pilots and helping certificated pilots improve their proficiency."
+      },
+      {
+        "id": "afh-1-2",
+        "question": "Which FAA program is mentioned in Chapter 1 to help pilots continue their education and improve safety?",
+        "options": [
+          "The SAF AIR Program",
+          "The Pilot Pro Program",
+          "The FAA Wings Program",
+          "The Skyward Initiative"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Chapter 1 introduces the FAA Wings Program as a way for pilots to continue their education."
+      }
+    ]
+  },
+  {
+    "chapterId": 1,
+    "bookTitle": "Weather Handbook",
+    "questions": [
+      {
+        "id": "wh-1-1",
+        "question": "What is the primary driver of weather patterns on Earth?",
+        "options": [
+          "Ocean currents",
+          "The rotation of the Earth only",
+          "Uneven heating of the Earth's surface by the sun",
+          "Lunar gravitational pull"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Weather is primarily driven by the uneven heating of the Earth's surface, which creates pressure differences and air movement."
+      }
+    ]
+  }
+]

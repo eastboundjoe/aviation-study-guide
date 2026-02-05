@@ -1,0 +1,284 @@
+[
+    {
+        "title": "Airplane Flying Handbook",
+        "filename": "FAA-Airplane Flying Handbook.txt",
+        "chapters": [
+            {
+                "id": 1,
+                "title": "Introduction to Flight Training",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 2,
+                "title": "Ground Operations",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 3,
+                "title": "Basic Flight Maneuvers",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 4,
+                "title": "Energy Management: Mastering Altitude and Airspeed Control",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 5,
+                "title": "Maintaining Aircraft Control: Upset Prevention and Recovery Training",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 6,
+                "title": "Takeoffs and Departure Climbs",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 7,
+                "title": "Ground Reference Maneuvers",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 8,
+                "title": "Airport Traffic Patterns",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 9,
+                "title": "Approaches and Landings",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 10,
+                "title": "Performance Maneuvers",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 11,
+                "title": "Night Operations",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 12,
+                "title": "Transition to Complex Airplanes",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 13,
+                "title": "Transition to Multiengine Airplanes",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 14,
+                "title": "Transition to Tailwheel Airplanes",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 15,
+                "title": "Transition to Turbopropeller-Powered Airplanes",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 16,
+                "title": "Transition to Jet-Powered Airplanes",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 17,
+                "title": "Transition to Light Sport Airplanes (LSA)",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 18,
+                "title": "Emergency Procedures",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 1,
+                "title": "Introduction to Flight Training",
+                "completed": false,
+                "quizzes": []
+            }
+        ]
+    },
+    {
+        "title": "Instrument Flying Handbook",
+        "filename": "FAA-Instrument Flying Handbook.txt",
+        "chapters": []
+    },
+    {
+        "title": "Instrument Procedures Handbook",
+        "filename": "FAA-Instrument Procedures Handbook.txt",
+        "chapters": []
+    },
+    {
+        "title": "Pilots Handbook of Aeronautical Knowledge",
+        "filename": "FAA-Pilots Handbook of Aeronautical Knowledge.txt",
+        "chapters": []
+    },
+    {
+        "title": "Plane Sense",
+        "filename": "FAA-Plane Sense.txt",
+        "chapters": [
+            {
+                "id": 1,
+                "title": "Aircraft Owner Responsibilities............. 1-1",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 2,
+                "title": "Buying an Aircraft......................................... 2-1",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 3,
+                "title": "Airworthiness Certificate.......................... 3-1",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 4,
+                "title": "Aircraft Registration. .................................. 4-1",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 5,
+                "title": "Special Flight Permits. ................................5-1",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 6,
+                "title": "Light-Sport Aircraft......................................6-1",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 7,
+                "title": "Aircraft Maintenance..................................7-1",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 8,
+                "title": "Maintenance Records. ................................ 8-1",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 9,
+                "title": "Airworthiness Directives........................... 9-1",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 10,
+                "title": "Service Difficulty Program..................... 10-1",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 11,
+                "title": "Obtaining FAA Publications",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 1,
+                "title": "Aircraft Owner Responsibilities",
+                "completed": false,
+                "quizzes": []
+            }
+        ]
+    },
+    {
+        "title": "Risk-Management-Handbook",
+        "filename": "FAA-Risk-Management-Handbook.txt",
+        "chapters": [
+            {
+                "id": 1,
+                "title": "Introduction to Risk Management",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 2,
+                "title": "Personal Minimums",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 3,
+                "title": "Identifying Hazards & Associated Risks",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 4,
+                "title": "Assessing Risk",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 5,
+                "title": "Mitigating Risk",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 6,
+                "title": "Threat and Error Management",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 7,
+                "title": "Automation & Flight Path Management",
+                "completed": false,
+                "quizzes": []
+            },
+            {
+                "id": 8,
+                "title": "Aeronautical Decision-Making in Flight",
+                "completed": false,
+                "quizzes": []
+            }
+        ]
+    },
+    {
+        "title": "Weather Handbook",
+        "filename": "FAA-Weather Handbook.txt",
+        "chapters": []
+    },
+    {
+        "title": "Weight-Balance Handbook",
+        "filename": "FAA-Weight-Balance Handbook.txt",
+        "chapters": []
+    },
+    {
+        "title": "aviation instructors handbook",
+        "filename": "FAA-aviation instructors handbook.txt",
+        "chapters": []
+    }
+]
