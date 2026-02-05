@@ -91,8 +91,11 @@ export default function CheckpointPage() {
     
     setIsPlaying(true);
     
+    // Clean markdown (asterisks, etc.) so the AI doesn't speak them
+    const cleanText = text.replace(/[*_#]/g, '');
+    
     // 1. Split text into sentences
-    const chunks = text.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [text];
+    const chunks = cleanText.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [cleanText];
     
     try {
       // 2. Start synthesizing ALL chunks in parallel for maximum speed
