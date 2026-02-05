@@ -26,8 +26,13 @@ export async function analyzeRecall(params: {
     };
   }
 
-  // Try 1.5 Flash first, fallback to Pro if needed
-  const modelNames = ["gemini-1.5-flash", "gemini-1.0-pro"];
+  // Try current latest stable and aliased names
+  const modelNames = [
+    "gemini-1.5-flash-latest", 
+    "gemini-1.5-flash", 
+    "gemini-1.5-pro-latest",
+    "gemini-1.0-pro"
+  ];
   let lastError = null;
 
   for (const modelName of modelNames) {
@@ -69,15 +74,27 @@ export async function analyzeRecall(params: {
       }
     } catch (error: any) {
       lastError = error;
-      console.warn(`Model ${modelName} failed, trying next...`, error.message);
+      console.warn(`Model ${modelName} failed:`, error.message);
       continue;
     }
   }
 
-  // If all models fail
+  // If all models fail, try to list models to help the user debug
+  let availableModels = "Could not list models.";
+  try {
+    // This is a manual way to check if we can see any models at all
+    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${process.env.GEMINI_API_KEY}`);
+    const data = await response.json();
+    if (data.models) {
+      availableModels = data.models.map((m: any) => m.name.replace('models/', '')).join(', ');
+    }
+  } catch (e) {
+    console.error("Failed to list models:", e);
+  }
+
   return {
     coveredPointIds: [],
-    feedback: "Model Access Issue: " + (lastError?.message || "Unknown error"),
-    clue: "I am having trouble accessing the Gemini models. Please check if your API key has 'Gemini 1.5 Flash' enabled in Google AI Studio."
+    feedback: "Model Access Issue: " + (lastError?.message || "404 Not Found"),
+    clue: "I couldn't find the Gemini models. Your key has access to: " + availableModels
   };
 }
