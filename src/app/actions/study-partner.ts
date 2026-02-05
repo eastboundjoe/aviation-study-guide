@@ -26,54 +26,58 @@ export async function analyzeRecall(params: {
     };
   }
 
-  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+  // Try 1.5 Flash first, fallback to Pro if needed
+  const modelNames = ["gemini-1.5-flash", "gemini-1.0-pro"];
+  let lastError = null;
 
-  const prompt = `
-    You are an expert FAA Flight Instructor. The student is summarizing "${params.chapterTitle}" from "${params.bookTitle}".
-    
-    TARGET KEY POINTS (with IDs):
-    ${params.keyPoints.map(kp => `- [ID: ${kp.id}] ${kp.text}`).join('\n')}
-    
-    STUDENT TRANSCRIPT:
-    "${params.transcript}"
-    
-    TASK:
-    1. List the IDs of the Target Key Points the student successfully explained.
-    2. Provide a short, encouraging sentence of feedback.
-    3. Provide a Socratic clue (leading question) for ONE missing point.
-    
-    OUTPUT MUST BE VALID JSON ONLY:
-    {
-      "coveredPointIds": ["ID1", "ID2"],
-      "feedback": "...",
-      "clue": "..."
+  for (const modelName of modelNames) {
+    try {
+      const model = genAI.getGenerativeModel({ model: modelName });
+
+      const prompt = `
+        You are an expert FAA Flight Instructor. The student is summarizing "${params.chapterTitle}" from "${params.bookTitle}".
+        
+        TARGET KEY POINTS (with IDs):
+        ${params.keyPoints.map(kp => `- [ID: ${kp.id}] ${kp.text}`).join('\n')}
+        
+        STUDENT TRANSCRIPT:
+        "${params.transcript}"
+        
+        TASK:
+        1. Identify which Target Key Points (by ID) the student successfully explained.
+        2. Provide a short, encouraging sentence of feedback.
+        3. Provide a Socratic clue (leading question) for ONE missing point.
+        
+        OUTPUT MUST BE VALID JSON ONLY:
+        {
+          "coveredPointIds": ["ID1", "ID2"],
+          "feedback": "...",
+          "clue": "..."
+        }
+      `;
+
+      const result = await model.generateContent(prompt);
+      const response = await result.response;
+      const text = response.text();
+      
+      const startIdx = text.indexOf('{');
+      const endIdx = text.lastIndexOf('}');
+      
+      if (startIdx !== -1 && endIdx !== -1) {
+        const cleanJson = text.substring(startIdx, endIdx + 1);
+        return JSON.parse(cleanJson);
+      }
+    } catch (error: any) {
+      lastError = error;
+      console.warn(`Model ${modelName} failed, trying next...`, error.message);
+      continue;
     }
-  `;
-
-  try {
-    const result = await model.generateContent(prompt);
-    const response = await result.response;
-    const text = response.text();
-    
-    const startIdx = text.indexOf('{');
-    const endIdx = text.lastIndexOf('}');
-    
-    if (startIdx === -1 || endIdx === -1) {
-      return {
-        coveredPointIds: [],
-        feedback: "The AI didn't return a proper format.",
-        clue: "Raw response: " + text.substring(0, 50) + "..."
-      };
-    }
-
-    const cleanJson = text.substring(startIdx, endIdx + 1);
-    return JSON.parse(cleanJson);
-  } catch (error: any) {
-    console.error("Gemini Analysis Error:", error);
-    return {
-      coveredPointIds: [],
-      feedback: "Connection Error: " + (error.message || "Unknown error"),
-      clue: "Check your internet connection or API quota in Google AI Studio."
-    };
   }
+
+  // If all models fail
+  return {
+    coveredPointIds: [],
+    feedback: "Model Access Issue: " + (lastError?.message || "Unknown error"),
+    clue: "I am having trouble accessing the Gemini models. Please check if your API key has 'Gemini 1.5 Flash' enabled in Google AI Studio."
+  };
 }
