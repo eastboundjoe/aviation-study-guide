@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Active Recall",
+    "icon": "Zap",
+    "description": "Don't just re-read. Testing yourself is the most crucial component of learning. Use the 'Reveal Mode' in quizzes to force your brain to retrieve info before seeing options.",
+    "source": "Ali Abdaal"
+  },
+  {
+    "title": "Spaced Repetition",
+    "icon": "Clock",
+    "description": "Review info just before you're about to forget it. Follow the 'Study Schedule' on your dashboard—it's designed to hack the forgetting curve.",
+    "source": "Ali Abdaal"
+  },
+  {
+    "title": "Retrospective Timetable",
+    "icon": "Calendar",
+    "description": "Instead of planning what to study next week, track what you studied today and color-code it based on how well you knew it (Red to Gold).",
+    "source": "Ali Abdaal"
+  },
+  {
+    "title": "Big Picture (Why is this bad?)",
+    "icon": "HelpCircle",
+    "description": "Understand the 'Why' before the details. When learning a concept, ask 'Why is this bad?' or 'What happens if this fails?' to anchor the knowledge.",
+    "source": "Ali Abdaal"
+  },
+  {
+    "title": "Verbal Recall",
+    "icon": "MessageSquare",
+    "description": "Verbally explaining a topic is much harder—and more effective—than simple recognition. Speak your answers out loud during study sessions.",
+    "source": "Radiology Resident"
+  },
+  {
+    "title": "Spatial Memory",
+    "icon": "Layout",
+    "description": "Condense large amounts of info into single-page 'maps'. Remembering WHERE something was on a page helps you recall WHAT it was during the test.",
+    "source": "Radiology Resident"
+  }
+]

@@ -4,9 +4,10 @@ import { useState } from 'react';
 import booksData from '@/data/books.json';
 import { useProgress } from '@/hooks/useProgress';
 import { Book, Chapter } from '@/types';
-import { BookOpen, CheckCircle2, Clock, PlayCircle, Trophy, Calendar } from 'lucide-react';
+import { BookOpen, CheckCircle2, Clock, PlayCircle, Trophy, Calendar, Zap, HelpCircle, MessageSquare, Layout, ChevronRight } from 'lucide-react';
 import { format, isToday, parseISO } from 'date-fns';
 import Link from 'next/link';
+import studyTips from '@/data/study-tips.json';
 
 export default function Dashboard() {
   const { progress } = useProgress();
@@ -180,6 +181,36 @@ export default function Dashboard() {
           )}
         </div>
       </div>
+
+      {/* Study Methodology Section */}
+      <section className="mt-20 mb-12">
+        <h2 className="text-2xl font-semibold text-slate-800 mb-6 flex items-center gap-2">
+          <Zap size={24} className="text-amber-500" /> The Study System
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {studyTips.map((tip) => (
+            <div key={tip.title} className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-2 bg-slate-50 rounded-lg text-blue-600">
+                  {tip.title === 'Active Recall' && <Zap size={20} />}
+                  {tip.title === 'Spaced Repetition' && <Clock size={20} />}
+                  {tip.title === 'Retrospective Timetable' && <Calendar size={20} />}
+                  {tip.title === 'Big Picture (Why is this bad?)' && <HelpCircle size={20} />}
+                  {tip.title === 'Verbal Recall' && <MessageSquare size={20} />}
+                  {tip.title === 'Spatial Memory' && <Layout size={20} />}
+                </div>
+                <h3 className="font-bold text-slate-900">{tip.title}</h3>
+              </div>
+              <p className="text-sm text-slate-600 leading-relaxed mb-4">
+                {tip.description}
+              </p>
+              <div className="flex items-center justify-between mt-auto pt-4 border-t border-slate-50">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400">Source: {tip.source}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
