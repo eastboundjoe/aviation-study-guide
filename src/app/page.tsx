@@ -119,26 +119,51 @@ export default function Dashboard() {
                 {selectedBook.chapters.map((chapter: any) => {
                   const isCompleted = progress.completedChapters[`${selectedBook.title}-${chapter.id}`];
                   const level = progress.reviewLevels[`${selectedBook.title}-${chapter.id}`] || 0;
+                  const reviewDate = progress.reviewDates[`${selectedBook.title}-${chapter.id}`];
                   
+                  // Color coding based on Spaced Repetition / Retrospective Timetable
+                  // 0: Red (Needs study), 1-2: Amber (Getting there), 3-4: Green (Good), 5: Gold (Mastered)
+                  const colors = [
+                    'border-rose-200 bg-rose-50',
+                    'border-amber-200 bg-amber-50',
+                    'border-amber-200 bg-amber-50',
+                    'border-emerald-200 bg-emerald-50',
+                    'border-emerald-200 bg-emerald-50',
+                    'border-amber-400 bg-amber-50 shadow-[0_0_10px_rgba(251,191,36,0.2)]'
+                  ];
+
                   return (
                     <div 
                       key={chapter.id}
-                      className="flex items-center justify-between p-3 rounded-lg bg-slate-50 border border-slate-100"
+                      className={`flex items-center justify-between p-3 rounded-lg border transition-all ${isCompleted ? colors[level] : 'bg-slate-50 border-slate-100 opacity-80'}`}
                     >
                       <div className="flex-1 pr-4">
-                        <p className="text-sm font-medium text-slate-700 leading-tight">
-                          <span className="text-slate-400 mr-2">{chapter.id}.</span>
+                        <p className={`text-sm font-medium leading-tight ${isCompleted ? 'text-slate-900' : 'text-slate-500'}`}>
+                          <span className="opacity-50 mr-2">{chapter.id}.</span>
                           {chapter.title}
                         </p>
-                        {isCompleted && (
-                          <span className="text-[10px] uppercase tracking-wider font-bold text-emerald-600 mt-1 block">
-                            Level {level} Mastered
-                          </span>
-                        )}
+                        <div className="flex gap-2 mt-1">
+                          {isCompleted ? (
+                            <>
+                              <span className="text-[9px] uppercase tracking-wider font-bold text-slate-500">
+                                Level {level}
+                              </span>
+                              {reviewDate && (
+                                <span className="text-[9px] uppercase tracking-wider font-bold text-blue-600">
+                                  Next: {format(parseISO(reviewDate), 'MMM d')}
+                                </span>
+                              )}
+                            </>
+                          ) : (
+                            <span className="text-[9px] uppercase tracking-wider font-bold text-slate-400 italic">
+                              Not Started
+                            </span>
+                          )}
+                        </div>
                       </div>
                       <Link 
                         href={`/quiz/${encodeURIComponent(selectedBook.title)}/${chapter.id}`}
-                        className="p-2 text-blue-600 hover:bg-blue-100 rounded-full transition-colors"
+                        className="p-2 text-blue-600 hover:bg-white rounded-full transition-all shadow-sm border border-transparent hover:border-blue-200"
                       >
                         <PlayCircle size={24} />
                       </Link>
