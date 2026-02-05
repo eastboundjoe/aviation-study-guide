@@ -5,134 +5,227 @@
         "chapters": [
             {
                 "id": 1,
-                "title": "Introduction to Flight Training",
-                "completed": false,
-                "quizzes": []
+                "title": "(Introduction to Flight Training) \u2013 Added information on the FAA Wings Program"
             },
             {
                 "id": 2,
-                "title": "Ground Operations",
-                "completed": false,
-                "quizzes": []
+                "title": "(Ground Operations) \u2013 Added a new graphic and information regarding detonation. Now uses"
             },
             {
                 "id": 3,
-                "title": "Basic Flight Maneuvers",
-                "completed": false,
-                "quizzes": []
+                "title": "(Basic Flight Maneuvers) \u2013 Corrected G1000 and indications of slip and skid graphics"
             },
             {
                 "id": 4,
-                "title": "Energy Management: Mastering Altitude and Airspeed Control",
-                "completed": false,
-                "quizzes": []
+                "title": "(Energy Management) \u2013 All new chapter/material. Incremented the existing chapters 4-17 by 1"
             },
             {
                 "id": 5,
-                "title": "Maintaining Aircraft Control: Upset Prevention and Recovery Training",
-                "completed": false,
-                "quizzes": []
+                "title": "(Maintaining Aircraft Control) \u2013 Revised the order in which the material was presented"
             },
             {
                 "id": 6,
-                "title": "Takeoffs and Departure Climbs",
-                "completed": false,
-                "quizzes": []
+                "title": "Takeoffs and Departure Climbs"
             },
             {
                 "id": 7,
-                "title": "Ground Reference Maneuvers",
-                "completed": false,
-                "quizzes": []
+                "title": "(Ground Reference Maneuvers) \u2013 Corrected errors in text and graphics for eights on pylons"
             },
             {
                 "id": 8,
-                "title": "Airport Traffic Patterns",
-                "completed": false,
-                "quizzes": []
+                "title": "Airport Traffic Patterns"
             },
             {
                 "id": 9,
-                "title": "Approaches and Landings",
-                "completed": false,
-                "quizzes": []
+                "title": "(Approaches and Landings) \u2013 Added information concerning a forward slip to a landing and"
             },
             {
                 "id": 10,
-                "title": "Performance Maneuvers",
-                "completed": false,
-                "quizzes": []
+                "title": "(Performance Maneuvers) \u2013 Added information on lazy eights"
             },
             {
                 "id": 11,
-                "title": "Night Operations",
-                "completed": false,
-                "quizzes": []
+                "title": "(Night Operations) \u2013 Revised to align with material from CAMI"
             },
             {
                 "id": 12,
-                "title": "Transition to Complex Airplanes",
-                "completed": false,
-                "quizzes": []
+                "title": "Transition to Complex Airplanes"
             },
             {
                 "id": 13,
-                "title": "Transition to Multiengine Airplanes",
-                "completed": false,
-                "quizzes": []
+                "title": "(Transition to Multiengine Airplanes) \u2013 Incorporated the addendum. Corrected G1000"
             },
             {
                 "id": 14,
-                "title": "Transition to Tailwheel Airplanes",
-                "completed": false,
-                "quizzes": []
+                "title": "(Transition to Tailwheel Airplanes) \u2013 Made minor revision regarding handling characteristics"
             },
             {
                 "id": 15,
-                "title": "Transition to Turbopropeller-Powered Airplanes",
-                "completed": false,
-                "quizzes": []
+                "title": "(Transition to Turbopropeller-Powered Airplanes) \u2013 Addressed an NTSB recommendation"
             },
             {
                 "id": 16,
-                "title": "Transition to Jet-Powered Airplanes",
-                "completed": false,
-                "quizzes": []
+                "title": "(Transition to Jet-Powered Airplanes) \u2013 Removed extra information that appears unrelated to"
             },
             {
                 "id": 17,
-                "title": "Transition to Light Sport Airplanes (LSA)",
-                "completed": false,
-                "quizzes": []
+                "title": "Transition to Light Sport Airplanes (LSA)"
             },
             {
                 "id": 18,
-                "title": "Emergency Procedures",
-                "completed": false,
-                "quizzes": []
-            },
-            {
-                "id": 1,
-                "title": "Introduction to Flight Training",
-                "completed": false,
-                "quizzes": []
+                "title": "(Emergency Procedures) \u2013 Revised information regarding the safety of turning back after an"
             }
         ]
     },
     {
         "title": "Instrument Flying Handbook",
         "filename": "FAA-Instrument Flying Handbook.txt",
-        "chapters": []
+        "chapters": [
+            {
+                "id": 1,
+                "title": "The National Airspace System"
+            },
+            {
+                "id": 2,
+                "title": "The Air Traffic Control System"
+            },
+            {
+                "id": 3,
+                "title": "Human Factors"
+            },
+            {
+                "id": 4,
+                "title": "Aerodynamic Factors"
+            },
+            {
+                "id": 5,
+                "title": "Flight Instruments"
+            },
+            {
+                "id": 8,
+                "title": "Helicopter Attitude Instrument Flying"
+            },
+            {
+                "id": 9,
+                "title": "Navigation Systems"
+            },
+            {
+                "id": 10,
+                "title": "IFR Flight"
+            },
+            {
+                "id": 11,
+                "title": "Emergency Operations"
+            }
+        ]
     },
     {
         "title": "Instrument Procedures Handbook",
         "filename": "FAA-Instrument Procedures Handbook.txt",
-        "chapters": []
+        "chapters": [
+            {
+                "id": 1,
+                "title": "Departure Procedures"
+            },
+            {
+                "id": 2,
+                "title": "En Route Operations"
+            },
+            {
+                "id": 3,
+                "title": "Arrivals"
+            },
+            {
+                "id": 4,
+                "title": "Approaches"
+            },
+            {
+                "id": 5,
+                "title": "Improvement Plans"
+            },
+            {
+                "id": 6,
+                "title": "Airborne Navigation Databases"
+            },
+            {
+                "id": 7,
+                "title": "Helicopter Instrument Procedures"
+            }
+        ]
     },
     {
         "title": "Pilots Handbook of Aeronautical Knowledge",
         "filename": "FAA-Pilots Handbook of Aeronautical Knowledge.txt",
-        "chapters": []
+        "chapters": [
+            {
+                "id": 1,
+                "title": "Introduction To Flying"
+            },
+            {
+                "id": 2,
+                "title": "Aeronautical Decision-Making"
+            },
+            {
+                "id": 3,
+                "title": "Aircraft Construction"
+            },
+            {
+                "id": 4,
+                "title": "Principles of Flight"
+            },
+            {
+                "id": 5,
+                "title": "Aerodynamics of Flight"
+            },
+            {
+                "id": 6,
+                "title": "Flight Controls"
+            },
+            {
+                "id": 7,
+                "title": "Aircraft Systems"
+            },
+            {
+                "id": 8,
+                "title": "Flight Instruments"
+            },
+            {
+                "id": 9,
+                "title": "Flight Manuals and Other Documents"
+            },
+            {
+                "id": 10,
+                "title": "Weight and Balance"
+            },
+            {
+                "id": 11,
+                "title": "Aircraft Performance"
+            },
+            {
+                "id": 12,
+                "title": "Weather Theory"
+            },
+            {
+                "id": 13,
+                "title": "Aviation Weather Services"
+            },
+            {
+                "id": 14,
+                "title": "Airport Operations"
+            },
+            {
+                "id": 15,
+                "title": "Airspace"
+            },
+            {
+                "id": 16,
+                "title": "Navigation"
+            },
+            {
+                "id": 17,
+                "title": "Aeromedical Factors"
+            }
+        ]
     },
     {
         "title": "Plane Sense",
@@ -140,75 +233,43 @@
         "chapters": [
             {
                 "id": 1,
-                "title": "Aircraft Owner Responsibilities............. 1-1",
-                "completed": false,
-                "quizzes": []
+                "title": "Aircraft Owner Responsibilities"
             },
             {
                 "id": 2,
-                "title": "Buying an Aircraft......................................... 2-1",
-                "completed": false,
-                "quizzes": []
+                "title": "Buying an Aircraft"
             },
             {
                 "id": 3,
-                "title": "Airworthiness Certificate.......................... 3-1",
-                "completed": false,
-                "quizzes": []
+                "title": "Airworthiness Certificate"
             },
             {
                 "id": 4,
-                "title": "Aircraft Registration. .................................. 4-1",
-                "completed": false,
-                "quizzes": []
+                "title": "Aircraft Registration"
             },
             {
                 "id": 5,
-                "title": "Special Flight Permits. ................................5-1",
-                "completed": false,
-                "quizzes": []
-            },
-            {
-                "id": 6,
-                "title": "Light-Sport Aircraft......................................6-1",
-                "completed": false,
-                "quizzes": []
+                "title": "Special Flight Permits"
             },
             {
                 "id": 7,
-                "title": "Aircraft Maintenance..................................7-1",
-                "completed": false,
-                "quizzes": []
+                "title": "Aircraft Maintenance"
             },
             {
                 "id": 8,
-                "title": "Maintenance Records. ................................ 8-1",
-                "completed": false,
-                "quizzes": []
+                "title": "Aircraft Maintenance Records"
             },
             {
                 "id": 9,
-                "title": "Airworthiness Directives........................... 9-1",
-                "completed": false,
-                "quizzes": []
+                "title": "Airworthiness Directives"
             },
             {
                 "id": 10,
-                "title": "Service Difficulty Program..................... 10-1",
-                "completed": false,
-                "quizzes": []
+                "title": "Service Difficulty Program"
             },
             {
                 "id": 11,
-                "title": "Obtaining FAA Publications",
-                "completed": false,
-                "quizzes": []
-            },
-            {
-                "id": 1,
-                "title": "Aircraft Owner Responsibilities",
-                "completed": false,
-                "quizzes": []
+                "title": "Obtaining FAA Publications and Records"
             }
         ]
     },
@@ -218,67 +279,246 @@
         "chapters": [
             {
                 "id": 1,
-                "title": "Introduction to Risk Management",
-                "completed": false,
-                "quizzes": []
+                "title": "Introduction to Risk Management"
             },
             {
                 "id": 2,
-                "title": "Personal Minimums",
-                "completed": false,
-                "quizzes": []
+                "title": "Personal Minimums"
             },
             {
                 "id": 3,
-                "title": "Identifying Hazards & Associated Risks",
-                "completed": false,
-                "quizzes": []
+                "title": "Identifying Hazards & Associated Risks"
             },
             {
                 "id": 4,
-                "title": "Assessing Risk",
-                "completed": false,
-                "quizzes": []
+                "title": "Assessing Risk"
             },
             {
                 "id": 5,
-                "title": "Mitigating Risk",
-                "completed": false,
-                "quizzes": []
+                "title": "Mitigating Risk"
             },
             {
                 "id": 6,
-                "title": "Threat and Error Management",
-                "completed": false,
-                "quizzes": []
+                "title": "Threat and Error Management"
             },
             {
                 "id": 7,
-                "title": "Automation & Flight Path Management",
-                "completed": false,
-                "quizzes": []
+                "title": "Automation & Flight Path Management"
             },
             {
                 "id": 8,
-                "title": "Aeronautical Decision-Making in Flight",
-                "completed": false,
-                "quizzes": []
+                "title": "Aeronautical Decision-Making in Flight"
             }
         ]
     },
     {
         "title": "Weather Handbook",
         "filename": "FAA-Weather Handbook.txt",
-        "chapters": []
+        "chapters": [
+            {
+                "id": 1,
+                "title": "Introduction"
+            },
+            {
+                "id": 2,
+                "title": "Aviation Weather Service Program"
+            },
+            {
+                "id": 3,
+                "title": "Overview of Aviation Weather Information"
+            },
+            {
+                "id": 4,
+                "title": "The Earth\u2019s Atmosphere"
+            },
+            {
+                "id": 5,
+                "title": "Heat and Temperature"
+            },
+            {
+                "id": 6,
+                "title": "Water Vapor"
+            },
+            {
+                "id": 7,
+                "title": "Earth-Atmosphere Heat Imbalances"
+            },
+            {
+                "id": 8,
+                "title": "Atmospheric Pressure and Altimetry"
+            },
+            {
+                "id": 9,
+                "title": "Global Circulations and Jet Streams"
+            },
+            {
+                "id": 10,
+                "title": "Wind"
+            },
+            {
+                "id": 11,
+                "title": "Air Masses, Fronts, and the Wave Cyclone Model"
+            },
+            {
+                "id": 12,
+                "title": "Vertical Motion and Clouds"
+            },
+            {
+                "id": 13,
+                "title": "Atmospheric Stability"
+            },
+            {
+                "id": 14,
+                "title": "Precipitation"
+            },
+            {
+                "id": 15,
+                "title": "Weather Radar"
+            },
+            {
+                "id": 16,
+                "title": "Mountain Weather"
+            },
+            {
+                "id": 17,
+                "title": "Tropical Weather"
+            },
+            {
+                "id": 18,
+                "title": "Weather and Obstructions to Visibility"
+            },
+            {
+                "id": 19,
+                "title": "Turbulence"
+            },
+            {
+                "id": 20,
+                "title": "Icing"
+            },
+            {
+                "id": 21,
+                "title": "Arctic Weather"
+            },
+            {
+                "id": 22,
+                "title": "Thunderstorms"
+            },
+            {
+                "id": 23,
+                "title": "Space Weather"
+            },
+            {
+                "id": 24,
+                "title": "Observations"
+            },
+            {
+                "id": 25,
+                "title": "Analysis"
+            },
+            {
+                "id": 26,
+                "title": "Advisories"
+            },
+            {
+                "id": 27,
+                "title": "Forecasts"
+            },
+            {
+                "id": 28,
+                "title": "Aviation Weather Tools"
+            }
+        ]
     },
     {
         "title": "Weight-Balance Handbook",
         "filename": "FAA-Weight-Balance Handbook.txt",
-        "chapters": []
+        "chapters": [
+            {
+                "id": 1,
+                "title": "Weight and Balance Control"
+            },
+            {
+                "id": 2,
+                "title": "Weight and Balance Theory"
+            },
+            {
+                "id": 3,
+                "title": "Weighing the Aircraft and Determining the"
+            },
+            {
+                "id": 4,
+                "title": "Sporty\u2019s Pilot Shop, for image of an E6B Flight Computer used in Chapter 10"
+            },
+            {
+                "id": 5,
+                "title": "Single-Engine Aircraft Weight and Balance"
+            },
+            {
+                "id": 6,
+                "title": "Multiengine Aircraft Weight and Balance"
+            },
+            {
+                "id": 7,
+                "title": "Center of Gravity Change After a"
+            },
+            {
+                "id": 8,
+                "title": "Weight and Balance Control\u2014Helicopter"
+            },
+            {
+                "id": 9,
+                "title": "Weight and Balance Control\u2014Commuter"
+            },
+            {
+                "id": 10,
+                "title": "Use of Computer for Weight and Balance"
+            }
+        ]
     },
     {
         "title": "aviation instructors handbook",
         "filename": "FAA-aviation instructors handbook.txt",
-        "chapters": []
+        "chapters": [
+            {
+                "id": 1,
+                "title": "Risk Management and Single-Pilot Resource Management"
+            },
+            {
+                "id": 2,
+                "title": "Human Behavior"
+            },
+            {
+                "id": 3,
+                "title": "The Learning Process"
+            },
+            {
+                "id": 4,
+                "title": "Effective Communication"
+            },
+            {
+                "id": 5,
+                "title": "The Teaching Process"
+            },
+            {
+                "id": 6,
+                "title": "Assessment"
+            },
+            {
+                "id": 7,
+                "title": "Planning Instructional Activity"
+            },
+            {
+                "id": 8,
+                "title": "Aviation Instructor Responsibilities and Professionalism"
+            },
+            {
+                "id": 9,
+                "title": "Techniques of Flight Instruction"
+            },
+            {
+                "id": 10,
+                "title": "Teaching Practical Risk Management during Flight Instruction"
+            }
+        ]
     }
 ]
