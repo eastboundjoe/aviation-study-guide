@@ -7,11 +7,20 @@ import { Book, Chapter } from '@/types';
 import { BookOpen, CheckCircle2, Clock, PlayCircle, Trophy, Calendar, Zap, HelpCircle, MessageSquare, Layout, ChevronRight } from 'lucide-react';
 import { format, isToday, parseISO } from 'date-fns';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import studyTips from '@/data/study-tips.json';
+import checkpointsData from '@/data/checkpoints.json';
 
 export default function Dashboard() {
+  const router = useRouter();
   const { progress } = useProgress();
   const [selectedBook, setSelectedBook] = useState<Book | null>(null);
+
+  const startMixedReview = () => {
+    const randomIdx = Math.floor(Math.random() * checkpointsData.length);
+    const checkpoint = checkpointsData[randomIdx];
+    router.push(`/checkpoint/${encodeURIComponent(checkpoint.bookTitle)}/${checkpoint.chapterId}`);
+  };
 
   const stats = {
     completed: Object.values(progress.completedChapters).filter(Boolean).length,
@@ -60,7 +69,10 @@ export default function Dashboard() {
             Mixing different subjects in one session forces your brain to work harder, 
             significantly improving long-term retention. Try a mixed quiz from all your handbooks.
           </p>
-          <button className="px-8 py-3 bg-white text-blue-700 rounded-xl font-bold hover:bg-blue-50 transition-colors shadow-sm flex items-center gap-2">
+          <button 
+            onClick={startMixedReview}
+            className="px-8 py-3 bg-white text-blue-700 rounded-xl font-bold hover:bg-blue-50 transition-colors shadow-sm flex items-center gap-2"
+          >
             <PlayCircle size={20} /> Start Mixed Review
           </button>
         </div>
