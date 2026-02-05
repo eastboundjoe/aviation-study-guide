@@ -26,12 +26,12 @@ export async function analyzeRecall(params: {
     };
   }
 
-  // Try current latest stable and aliased names
+  // Use model names confirmed from your diagnostic list
   const modelNames = [
-    "gemini-1.5-flash-latest", 
-    "gemini-1.5-flash", 
-    "gemini-1.5-pro-latest",
-    "gemini-1.0-pro"
+    "gemini-2.0-flash", 
+    "gemini-flash-latest",
+    "gemini-2.0-flash-lite",
+    "gemini-pro-latest"
   ];
   let lastError = null;
 
