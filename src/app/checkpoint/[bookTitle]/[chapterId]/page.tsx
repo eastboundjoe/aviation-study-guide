@@ -5,9 +5,10 @@ import { useParams, useRouter } from 'next/navigation';
 import checkpointsData from '@/data/checkpoints.json';
 import booksData from '@/data/books.json';
 import { useProgress } from '@/hooks/useProgress';
-import { Mic, MicOff, CheckCircle2, ChevronLeft, Volume2, VolumeX, Info, RefreshCw, Trophy, Sparkles, MessageCircle } from 'lucide-react';
+import { Mic, MicOff, CheckCircle2, ChevronLeft, Volume2, VolumeX, Info, RefreshCw, Trophy, Sparkles, MessageCircle, Play } from 'lucide-react';
 import Link from 'next/link';
 import { analyzeRecall } from '@/app/actions/study-partner';
+import { synthesizeSpeech } from '@/app/actions/tts';
 
 export default function CheckpointPage() {
   const params = useParams();
@@ -28,9 +29,11 @@ export default function CheckpointPage() {
   const [aiFeedback, setAiFeedback] = useState<string | null>(null);
   const [aiClue, setAiClue] = useState<string | null>(null);
   const [isMuted, setIsMuted] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
   const [showDebug, setShowDebug] = useState(false);
   const fullTranscriptRef = useRef('');
   const interimRef = useRef('');
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const checkpoint = checkpointsData.find(c => c.bookTitle === bookTitle && c.chapterId === chapterId);
   const book = booksData.find(b => b.title === bookTitle);
@@ -83,16 +86,36 @@ export default function CheckpointPage() {
     }
   }, [checkpoint]);
 
-  const speakResponse = (text: string) => {
+  const speakResponse = async (text: string) => {
     if (isMuted || typeof window === 'undefined') return;
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(text);
-    const voices = window.speechSynthesis.getVoices();
-    const instructorVoice = voices.find(v => v.name.includes('Google US English') || v.name.includes('Male')) || voices[0];
-    if (instructorVoice) utterance.voice = instructorVoice;
-    utterance.rate = 0.95;
-    utterance.pitch = 1.0;
-    window.speechSynthesis.speak(utterance);
+    
+    setIsPlaying(true);
+    try {
+      const audioContent = await synthesizeSpeech(text);
+      
+      if (audioContent) {
+        const audioBlob = new Blob(
+          [Uint8Array.from(atob(audioContent), c => c.charCodeAt(0))],
+          { type: 'audio/mp3' }
+        );
+        const url = URL.createObjectURL(audioBlob);
+        
+        if (audioRef.current) {
+          audioRef.current.src = url;
+          audioRef.current.play();
+          audioRef.current.onended = () => setIsPlaying(false);
+        }
+      } else {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.rate = 0.95;
+        utterance.onend = () => setIsPlaying(false);
+        window.speechSynthesis.speak(utterance);
+      }
+    } catch (e) {
+      console.error("Speech Synthesis Error:", e);
+      setIsPlaying(false);
+    }
   };
 
   const checkKeywords = (text: string) => {
@@ -188,6 +211,7 @@ export default function CheckpointPage() {
 
   return (
     <div className="min-h-screen bg-slate-50 p-6 md:p-12">
+      <audio ref={audioRef} hidden />
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center justify-between mb-8">
           <Link href="/" className="text-slate-500 hover:text-slate-800 flex items-center gap-1 transition-colors">
@@ -198,7 +222,10 @@ export default function CheckpointPage() {
               onClick={() => {
                 const newMuted = !isMuted;
                 setIsMuted(newMuted);
-                if (newMuted) window.speechSynthesis.cancel();
+                if (newMuted) {
+                  window.speechSynthesis.cancel();
+                  if (audioRef.current) audioRef.current.pause();
+                }
               }}
               className={`p-2 rounded-full transition-colors ${isMuted ? 'bg-slate-200 text-slate-500' : 'bg-blue-100 text-blue-600'}`}
               title={isMuted ? "Unmute AI Voice" : "Mute AI Voice"}
@@ -225,6 +252,11 @@ export default function CheckpointPage() {
                     <span className="w-2 h-2 bg-rose-500 rounded-full"></span> RECORDING
                   </span>
                 )}
+                {isPlaying && !isRecording && (
+                  <span className="flex items-center gap-2 text-blue-500 text-xs font-bold animate-pulse">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span> AI SPEAKING
+                  </span>
+                )}
               </div>
 
               <p className="text-slate-500 text-sm mb-8 leading-relaxed italic">
@@ -246,16 +278,16 @@ export default function CheckpointPage() {
               <div className="flex justify-center">
                 <button
                   onClick={toggleRecording}
-                  disabled={isAnalyzing}
+                  disabled={isAnalyzing || isPlaying}
                   className={`w-20 h-20 rounded-full flex items-center justify-center transition-all ${
                     isRecording 
                     ? 'bg-rose-500 text-white shadow-lg shadow-rose-200 scale-110' 
-                    : isAnalyzing 
+                    : (isAnalyzing || isPlaying)
                       ? 'bg-slate-200 text-slate-400 cursor-wait'
                       : 'bg-blue-600 text-white shadow-lg shadow-blue-200 hover:bg-blue-700'
                   }`}
                 >
-                  {isRecording ? <MicOff size={32} /> : isAnalyzing ? <RefreshCw className="animate-spin" size={32} /> : <Mic size={32} />}
+                  {isRecording ? <MicOff size={32} /> : (isAnalyzing || isPlaying) ? <RefreshCw className="animate-spin" size={32} /> : <Mic size={32} />}
                 </button>
               </div>
             </div>
@@ -288,7 +320,8 @@ export default function CheckpointPage() {
                     )}
                     <button 
                       onClick={toggleRecording}
-                      className="text-xs font-bold uppercase tracking-wider flex items-center gap-2 text-white hover:text-amber-300 transition-colors"
+                      disabled={isPlaying}
+                      className="text-xs font-bold uppercase tracking-wider flex items-center gap-2 text-white hover:text-amber-300 transition-colors disabled:opacity-50"
                     >
                       <Mic size={14} /> Resume explaining to answer the clue
                     </button>
@@ -352,7 +385,7 @@ export default function CheckpointPage() {
 
             <button
               onClick={handleComplete}
-              disabled={isRecording}
+              disabled={isRecording || isPlaying}
               className={`w-full py-4 rounded-2xl font-bold transition-all flex items-center justify-center gap-2 ${
                 keyPoints.every(kp => kp.checked)
                 ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-100 hover:bg-emerald-700'
