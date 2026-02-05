@@ -48,6 +48,24 @@ export default function Dashboard() {
         />
       </div>
 
+      {/* Interleaving / Mixed Practice Call to Action */}
+      <div className="mb-12 bg-gradient-to-r from-blue-600 to-indigo-700 rounded-3xl p-8 text-white shadow-lg shadow-blue-200">
+        <div className="max-w-2xl">
+          <div className="flex items-center gap-2 mb-2">
+            <Zap size={20} className="text-amber-300" />
+            <span className="text-xs font-bold uppercase tracking-widest text-blue-100">Advanced Study</span>
+          </div>
+          <h2 className="text-3xl font-bold mb-4">Masterclass: Interleaved Practice</h2>
+          <p className="text-blue-50 mb-6 leading-relaxed">
+            Mixing different subjects in one session forces your brain to work harder, 
+            significantly improving long-term retention. Try a mixed quiz from all your handbooks.
+          </p>
+          <button className="px-8 py-3 bg-white text-blue-700 rounded-xl font-bold hover:bg-blue-50 transition-colors shadow-sm flex items-center gap-2">
+            <PlayCircle size={20} /> Start Mixed Review
+          </button>
+        </div>
+      </div>
+
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Study Schedule Section */}
         <div className="lg:col-span-3">
