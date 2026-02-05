@@ -29,13 +29,15 @@ export async function synthesizeSpeech(text: string) {
 
     const data = await response.json();
     if (data.audioContent) {
-      return data.audioContent; // Base64 audio string
+      return data.audioContent; 
     } else {
-      console.error("TTS API Error:", data);
-      return null;
+      // Return the error message to the frontend for debugging
+      const errorMsg = data.error?.message || JSON.stringify(data);
+      console.error("TTS API Error Details:", errorMsg);
+      return { error: errorMsg };
     }
-  } catch (error) {
-    console.error("TTS Fetch Error:", error);
-    return null;
+  } catch (error: any) {
+    console.error("TTS Fetch Error:", error.message);
+    return { error: error.message };
   }
 }

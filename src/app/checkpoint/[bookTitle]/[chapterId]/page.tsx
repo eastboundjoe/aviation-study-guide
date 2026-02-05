@@ -91,11 +91,11 @@ export default function CheckpointPage() {
     
     setIsPlaying(true);
     try {
-      const audioContent = await synthesizeSpeech(text);
+      const result = await synthesizeSpeech(text);
       
-      if (audioContent) {
+      if (result && typeof result === 'string') {
         const audioBlob = new Blob(
-          [Uint8Array.from(atob(audioContent), c => c.charCodeAt(0))],
+          [Uint8Array.from(atob(result), c => c.charCodeAt(0))],
           { type: 'audio/mp3' }
         );
         const url = URL.createObjectURL(audioBlob);
@@ -106,6 +106,9 @@ export default function CheckpointPage() {
           audioRef.current.onended = () => setIsPlaying(false);
         }
       } else {
+        if (result && (result as any).error) {
+          console.warn("High-quality TTS failed, falling back to browser. Error:", (result as any).error);
+        }
         window.speechSynthesis.cancel();
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.rate = 0.95;
