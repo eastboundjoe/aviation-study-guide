@@ -206,6 +206,14 @@ export default function Dashboard() {
               </p>
               <div className="flex items-center justify-between mt-auto pt-4 border-t border-slate-50">
                 <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400">Source: {tip.source}</span>
+                <a 
+                  href={tip.videoUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-[10px] font-bold uppercase tracking-wider text-blue-600 hover:text-blue-800 flex items-center gap-1"
+                >
+                  Watch Tip <ChevronRight size={12} />
+                </a>
               </div>
             </div>
           ))}
