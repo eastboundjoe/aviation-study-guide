@@ -19,11 +19,11 @@ export function HeatmapCalendar({ data }: HeatmapCalendarProps) {
 
   // Get color based on chapters completed
   const getColor = (count: number) => {
-    if (count === 0) return 'bg-slate-100';
-    if (count === 1) return 'bg-emerald-200';
-    if (count === 2) return 'bg-emerald-400';
-    if (count === 3) return 'bg-emerald-500';
-    return 'bg-emerald-600';
+    if (count === 0) return 'bg-slate-100 dark:bg-slate-800';
+    if (count === 1) return 'bg-emerald-200 dark:bg-emerald-900';
+    if (count === 2) return 'bg-emerald-400 dark:bg-emerald-700';
+    if (count === 3) return 'bg-emerald-500 dark:bg-emerald-500';
+    return 'bg-emerald-600 dark:bg-emerald-400';
   };
 
   // Group data into weeks (7 days each)
@@ -73,27 +73,27 @@ export function HeatmapCalendar({ data }: HeatmapCalendarProps) {
   };
 
   return (
-    <div className="relative bg-white p-6 rounded-3xl border border-slate-200 shadow-sm">
+    <div className="relative bg-white dark:bg-slate-900/50 p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm">
       <div className="flex items-center justify-between mb-4">
         <div>
-          <span className="text-3xl font-bold text-slate-900">{totalDaysPracticed}</span>
-          <span className="text-slate-500 ml-2">days practiced</span>
+          <span className="text-3xl font-bold text-slate-900 dark:text-white">{totalDaysPracticed}</span>
+          <span className="text-slate-500 dark:text-slate-400 ml-2">days studied</span>
         </div>
-        <div className="flex items-center gap-2 text-xs text-slate-500">
+        <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
           <span>Less</span>
           <div className="flex gap-1">
-            <div className="w-3 h-3 rounded-sm bg-slate-100" />
-            <div className="w-3 h-3 rounded-sm bg-emerald-200" />
-            <div className="w-3 h-3 rounded-sm bg-emerald-400" />
-            <div className="w-3 h-3 rounded-sm bg-emerald-500" />
-            <div className="w-3 h-3 rounded-sm bg-emerald-600" />
+            <div className="w-3 h-3 rounded-sm bg-slate-100 dark:bg-slate-800" />
+            <div className="w-3 h-3 rounded-sm bg-emerald-200 dark:bg-emerald-900" />
+            <div className="w-3 h-3 rounded-sm bg-emerald-400 dark:bg-emerald-700" />
+            <div className="w-3 h-3 rounded-sm bg-emerald-500 dark:bg-emerald-500" />
+            <div className="w-3 h-3 rounded-sm bg-emerald-600 dark:bg-emerald-400" />
           </div>
           <span>More</span>
         </div>
       </div>
 
       <div className="overflow-x-auto pb-2">
-        <div className="flex gap-[3px] ml-8 mb-1 text-[9px] text-slate-400" style={{ minWidth: 'max-content' }}>
+        <div className="flex gap-[3px] ml-8 mb-1 text-[9px] text-slate-400 dark:text-slate-500" style={{ minWidth: 'max-content' }}>
           {weeks.map((week, weekIndex) => {
             const label = monthLabels.find(l => l.weekIndex === weekIndex);
             return (
@@ -105,7 +105,7 @@ export function HeatmapCalendar({ data }: HeatmapCalendarProps) {
         </div>
 
         <div className="flex gap-[3px]" style={{ minWidth: 'max-content' }}>
-          <div className="flex flex-col gap-[3px] text-[9px] text-slate-400 mr-2">
+          <div className="flex flex-col gap-[3px] text-[9px] text-slate-400 dark:text-slate-500 mr-2">
             <div className="h-[12px]"></div>
             <div className="h-[12px] flex items-center">Mon</div>
             <div className="h-[12px]"></div>
@@ -120,7 +120,7 @@ export function HeatmapCalendar({ data }: HeatmapCalendarProps) {
               {week.map((day) => (
                 <div
                   key={day.date}
-                  className={`w-[12px] h-[12px] rounded-sm cursor-pointer transition-all hover:ring-2 hover:ring-emerald-400 ${getColor(day.count)}`}
+                  className={`w-[12px] h-[12px] rounded-sm cursor-pointer transition-all hover:ring-2 hover:ring-emerald-400 dark:hover:ring-emerald-500 ${getColor(day.count)}`}
                   onMouseEnter={(e) => handleMouseEnter(day, e)}
                   onMouseLeave={() => setHoveredDay(null)}
                 />
@@ -132,17 +132,17 @@ export function HeatmapCalendar({ data }: HeatmapCalendarProps) {
 
       {hoveredDay && (
         <div
-          className="fixed z-50 px-3 py-2 text-sm bg-slate-900 text-white rounded-lg shadow-lg pointer-events-none transform -translate-x-1/2 -translate-y-full"
+          className="fixed z-50 px-3 py-2 text-sm bg-slate-900 dark:bg-slate-800 text-white rounded-lg shadow-lg pointer-events-none transform -translate-x-1/2 -translate-y-full border border-slate-700"
           style={{
             left: tooltipPosition.x,
             top: tooltipPosition.y,
           }}
         >
           <div className="font-medium">{formatDate(hoveredDay.date)}</div>
-          <div className={hoveredDay.count > 0 ? "text-emerald-400" : "text-slate-400"}>
+          <div className={hoveredDay.count > 0 ? "text-emerald-400" : "text-slate-400 dark:text-slate-500"}>
             {hoveredDay.count} {hoveredDay.count === 1 ? 'checkpoint' : 'checkpoints'} completed
           </div>
-          <div className="absolute left-1/2 -translate-x-1/2 top-full w-0 h-0 border-l-[6px] border-r-[6px] border-t-[6px] border-l-transparent border-r-transparent border-t-slate-900" />
+          <div className="absolute left-1/2 -translate-x-1/2 top-full w-0 h-0 border-l-[6px] border-r-[6px] border-t-[6px] border-l-transparent border-r-transparent border-t-slate-900 dark:border-t-slate-800" />
         </div>
       )}
     </div>
