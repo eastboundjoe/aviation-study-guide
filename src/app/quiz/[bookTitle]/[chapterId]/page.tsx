@@ -7,11 +7,13 @@ import booksData from '@/data/books.json';
 import { useProgress } from '@/hooks/useProgress';
 import { CheckCircle2, XCircle, ArrowRight, Home, ChevronLeft } from 'lucide-react';
 import Link from 'next/link';
+import { useAuth } from '@/components/auth-provider';
 
 export default function QuizPage() {
   const params = useParams();
   const router = useRouter();
-  const { completeCheckpoint } = useProgress();
+  const { user } = useAuth();
+  const { completeCheckpoint } = useProgress(user?.id);
   
   const bookTitle = decodeURIComponent(params.bookTitle as string);
   const chapterId = parseInt(params.chapterId as string);

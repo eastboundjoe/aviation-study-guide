@@ -9,11 +9,13 @@ import { Mic, MicOff, CheckCircle2, ChevronLeft, Volume2, VolumeX, Info, Refresh
 import Link from 'next/link';
 import { analyzeRecall } from '@/app/actions/study-partner';
 import { synthesizeSpeech } from '@/app/actions/tts';
+import { useAuth } from '@/components/auth-provider';
 
 export default function CheckpointPage() {
   const params = useParams();
   const router = useRouter();
-  const { completeCheckpoint } = useProgress();
+  const { user } = useAuth();
+  const { completeCheckpoint } = useProgress(user?.id);
   
   const bookTitle = decodeURIComponent(params.bookTitle as string);
   const chapterId = parseInt(params.chapterId as string);

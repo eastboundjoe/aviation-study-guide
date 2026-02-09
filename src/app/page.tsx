@@ -4,7 +4,7 @@ import { useState } from 'react';
 import booksData from '@/data/books.json';
 import { useProgress } from '@/hooks/useProgress';
 import { Book, Chapter } from '@/types';
-import { BookOpen, CheckCircle2, Clock, PlayCircle, Trophy, Calendar, Zap, HelpCircle, MessageSquare, Layout, ChevronRight, Sparkles, PenTool } from 'lucide-react';
+import { BookOpen, CheckCircle2, Clock, PlayCircle, Trophy, Calendar, Zap, HelpCircle, MessageSquare, Layout, ChevronRight, Sparkles, PenTool, LogIn, LogOut, Cloud, CloudOff } from 'lucide-react';
 import { format, isToday, parseISO } from 'date-fns';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
@@ -13,11 +13,15 @@ import checkpointsData from '@/data/checkpoints.json';
 import { HeatmapCalendar } from '@/components/HeatmapCalendar';
 import { getHeatmapData } from '@/utils/stats';
 import { ThemeToggle } from '@/components/ThemeToggle';
+import { useAuth } from '@/components/auth-provider';
+import { AuthModal } from '@/components/AuthModal';
 
 export default function Dashboard() {
   const router = useRouter();
-  const { progress } = useProgress();
+  const { user, loading: authLoading, signOut } = useAuth();
+  const { progress, syncing } = useProgress(user?.id);
   const [selectedBook, setSelectedBook] = useState<Book | null>(null);
+  const [authModalOpen, setAuthModalOpen] = useState(false);
 
   const heatmapData = getHeatmapData(progress.studyHistory);
 
@@ -43,8 +47,46 @@ export default function Dashboard() {
           <h1 className="text-4xl font-bold text-slate-900 dark:text-white mb-2">Aviation Study Guide</h1>
           <p className="text-slate-600 dark:text-slate-400">Master your FAA handbooks with spaced repetition.</p>
         </div>
-        <ThemeToggle />
+        <div className="flex items-center gap-3">
+          {user && (
+            <span className="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400">
+              {syncing ? (
+                <><Cloud size={14} className="animate-pulse text-blue-500" /> Syncing...</>
+              ) : (
+                <><Cloud size={14} className="text-emerald-500" /> Synced</>
+              )}
+            </span>
+          )}
+          {authLoading ? null : user ? (
+            <button
+              onClick={() => signOut()}
+              className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white border border-slate-200 dark:border-slate-700 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+            >
+              <LogOut size={16} /> Sign Out
+            </button>
+          ) : (
+            <button
+              onClick={() => setAuthModalOpen(true)}
+              className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
+            >
+              <LogIn size={16} /> Sign In
+            </button>
+          )}
+          <ThemeToggle />
+        </div>
       </header>
+
+      {/* Guest mode banner */}
+      {!authLoading && !user && (
+        <div className="mb-8 flex items-center gap-3 px-5 py-3 rounded-xl bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800">
+          <CloudOff size={18} className="text-blue-500 shrink-0" />
+          <p className="text-sm text-blue-700 dark:text-blue-300">
+            <button onClick={() => setAuthModalOpen(true)} className="font-semibold underline underline-offset-2 hover:text-blue-900 dark:hover:text-blue-100">Sign in</button> to sync your progress across devices.
+          </p>
+        </div>
+      )}
+
+      <AuthModal isOpen={authModalOpen} onClose={() => setAuthModalOpen(false)} />
 
       {/* Study Activity Heatmap */}
       <div className="mb-12">
