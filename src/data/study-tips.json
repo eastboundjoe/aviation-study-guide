@@ -47,5 +47,19 @@
     "description": "Don't just read—interact. Summarize each paragraph in the margin. For every new paragraph, write one sentence summarizing everything prior and one for the current text. This recursive process forces semantic understanding.",
     "source": "Professor Kaplan",
     "videoUrl": "https://www.youtube.com/watch?v=uiNB-6SuqVA"
+  },
+  {
+    "title": "Mnemonic Cues",
+    "icon": "Sparkles",
+    "description": "The human mind encodes info through stories. Create a 'mnemonic cue' by associating a symbol with a vivid, even weird, mental story or animation to lock it in.",
+    "source": "Professor Kaplan",
+    "videoUrl": "https://www.youtube.com/watch?v=oBUhdwTt7ow"
+  },
+  {
+    "title": "Note-Taking Bones",
+    "icon": "Edit3",
+    "description": "Hand-write your notes as summaries, not transcripts. Within 24 hours, 'add flesh' by filling in details from memory while the mental skeleton is still fresh.",
+    "source": "Professor Kaplan",
+    "videoUrl": "https://www.youtube.com/watch?v=ATmJb3bH2E0"
   }
 ]

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import booksData from '@/data/books.json';
 import { useProgress } from '@/hooks/useProgress';
 import { Book, Chapter } from '@/types';
-import { BookOpen, CheckCircle2, Clock, PlayCircle, Trophy, Calendar, Zap, HelpCircle, MessageSquare, Layout, ChevronRight } from 'lucide-react';
+import { BookOpen, CheckCircle2, Clock, PlayCircle, Trophy, Calendar, Zap, HelpCircle, MessageSquare, Layout, ChevronRight, Sparkles, PenTool } from 'lucide-react';
 import { format, isToday, parseISO } from 'date-fns';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
@@ -79,37 +79,80 @@ export default function Dashboard() {
       </div>
 
       {/* Retaining Information Video Section */}
-      <div className="mb-12 bg-white rounded-3xl p-8 border border-slate-200 shadow-sm flex flex-col md:flex-row gap-8 items-center">
-        <div className="flex-1">
-          <div className="flex items-center gap-2 mb-2">
-            <BookOpen size={20} className="text-blue-600" />
-            <span className="text-xs font-bold uppercase tracking-widest text-slate-500">Essential Skill</span>
+      <div className="mb-12 space-y-8">
+        <h2 className="text-2xl font-semibold text-slate-800 flex items-center gap-2">
+          <PlayCircle size={24} className="text-rose-500" /> Professor Kaplan's Masterclass
+        </h2>
+        
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
+          {/* Video 1: Marginalia */}
+          <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm flex flex-col h-full">
+            <div className="flex-1 mb-6">
+              <div className="flex items-center gap-2 mb-2">
+                <BookOpen size={16} className="text-blue-600" />
+                <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Retention</span>
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">The Marginalia Method</h3>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                Learn the recursive summary technique that forces your brain to engage with the 
+                meaning of every paragraph.
+              </p>
+            </div>
+            <div className="aspect-video rounded-xl overflow-hidden shadow-md border border-slate-100 mb-4">
+              <iframe 
+                width="100%" height="100%" 
+                src="https://www.youtube.com/embed/uiNB-6SuqVA" 
+                title="The Marginalia Method" 
+                frameBorder="0" allowFullScreen
+              ></iframe>
+            </div>
           </div>
-          <h2 className="text-3xl font-bold text-slate-900 mb-4">The Marginalia Method</h2>
-          <p className="text-slate-600 mb-6 leading-relaxed">
-            Professor Kaplan explains why &quot;passing your eyes over the text&quot; is a waste of time. 
-            Learn the recursive summary technique that forces your brain to engage with the 
-            meaning of every paragraph you read.
-          </p>
-          <a 
-            href="https://www.youtube.com/watch?v=uiNB-6SuqVA"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white rounded-xl font-bold hover:bg-slate-800 transition-colors shadow-sm"
-          >
-            <PlayCircle size={20} /> Watch Full Lecture
-          </a>
-        </div>
-        <div className="flex-1 w-full aspect-video rounded-2xl overflow-hidden shadow-lg border border-slate-100">
-          <iframe 
-            width="100%" 
-            height="100%" 
-            src="https://www.youtube.com/embed/uiNB-6SuqVA" 
-            title="Professor Kaplan: How to Retain Everything You Learn" 
-            frameBorder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowFullScreen
-          ></iframe>
+
+          {/* Video 2: Memorization */}
+          <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm flex flex-col h-full">
+            <div className="flex-1 mb-6">
+              <div className="flex items-center gap-2 mb-2">
+                <Sparkles size={16} className="text-amber-500" />
+                <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Memory</span>
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Memorize Efficiently</h3>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                Discover the power of mnemonic cues and why index cards are the ultimate 
+                tool for spaced repetition.
+              </p>
+            </div>
+            <div className="aspect-video rounded-xl overflow-hidden shadow-md border border-slate-100 mb-4">
+              <iframe 
+                width="100%" height="100%" 
+                src="https://www.youtube.com/embed/oBUhdwTt7ow" 
+                title="Memorize Efficiently" 
+                frameBorder="0" allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+
+          {/* Video 3: Note-Taking */}
+          <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm flex flex-col h-full">
+            <div className="flex-1 mb-6">
+              <div className="flex items-center gap-2 mb-2">
+                <PenTool size={16} className="text-emerald-500" />
+                <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Note-Taking</span>
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Effective Note-Taking</h3>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                Stop transcribing and start processing. Learn the 24-hour "flesh on bones" 
+                rule for handwritten notes.
+              </p>
+            </div>
+            <div className="aspect-video rounded-xl overflow-hidden shadow-md border border-slate-100 mb-4">
+              <iframe 
+                width="100%" height="100%" 
+                src="https://www.youtube.com/embed/ATmJb3bH2E0" 
+                title="Effective Note-Taking" 
+                frameBorder="0" allowFullScreen
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -267,6 +310,9 @@ export default function Dashboard() {
                   {tip.title === 'Big Picture (Why is this bad?)' && <HelpCircle size={20} />}
                   {tip.title === 'Verbal Recall' && <MessageSquare size={20} />}
                   {tip.title === 'Spatial Memory' && <Layout size={20} />}
+                  {tip.title === "Professor Kaplan's Marginalia" && <BookOpen size={20} />}
+                  {tip.title === 'Mnemonic Cues' && <Sparkles size={20} />}
+                  {tip.title === 'Note-Taking Bones' && <PenTool size={20} />}
                 </div>
                 <h3 className="font-bold text-slate-900">{tip.title}</h3>
               </div>
