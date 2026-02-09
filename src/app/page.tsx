@@ -10,11 +10,15 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import studyTips from '@/data/study-tips.json';
 import checkpointsData from '@/data/checkpoints.json';
+import { HeatmapCalendar } from '@/components/HeatmapCalendar';
+import { getHeatmapData } from '@/utils/stats';
 
 export default function Dashboard() {
   const router = useRouter();
   const { progress } = useProgress();
   const [selectedBook, setSelectedBook] = useState<Book | null>(null);
+
+  const heatmapData = getHeatmapData(progress.studyHistory);
 
   const startMixedReview = () => {
     const randomIdx = Math.floor(Math.random() * checkpointsData.length);
@@ -37,6 +41,12 @@ export default function Dashboard() {
         <h1 className="text-4xl font-bold text-slate-900 mb-2">Aviation Study Guide</h1>
         <p className="text-slate-600">Master your FAA handbooks with spaced repetition.</p>
       </header>
+
+      {/* Study Activity Heatmap */}
+      <div className="mb-12">
+        <h2 className="text-xl font-semibold text-slate-800 mb-4">Study Activity</h2>
+        <HeatmapCalendar data={heatmapData} />
+      </div>
 
       {/* Stats Overview */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">

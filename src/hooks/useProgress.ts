@@ -9,13 +9,19 @@ export function useProgress() {
     reviewDates: {},
     reviewLevels: {},
     quizScores: {},
+    studyHistory: [],
   });
 
   useEffect(() => {
     const saved = localStorage.getItem('aviation-study-progress');
     if (saved) {
       try {
-        setProgress(JSON.parse(saved));
+        const parsed = JSON.parse(saved);
+        // Ensure studyHistory exists for older saves
+        if (!parsed.studyHistory) {
+          parsed.studyHistory = [];
+        }
+        setProgress(parsed);
       } catch (e) {
         console.error('Failed to load progress', e);
       }
@@ -38,11 +44,19 @@ export function useProgress() {
       const nextDate = new Date();
       nextDate.setDate(nextDate.getDate() + intervals[newLevel]);
 
+      const session = {
+        date: new Date().toISOString(),
+        bookTitle,
+        chapterId,
+        success
+      };
+
       const newProgress = {
         ...prev,
         completedChapters: { ...prev.completedChapters, [key]: true },
         reviewLevels: { ...prev.reviewLevels, [key]: newLevel },
-        reviewDates: { ...prev.reviewDates, [key]: nextDate.toISOString() }
+        reviewDates: { ...prev.reviewDates, [key]: nextDate.toISOString() },
+        studyHistory: [...(prev.studyHistory || []), session]
       };
       
       saveProgress(newProgress);

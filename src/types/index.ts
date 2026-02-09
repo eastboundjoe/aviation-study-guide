@@ -28,9 +28,17 @@ export interface Quiz {
   questions: Question[];
 }
 
+export interface StudySession {
+  date: string; // ISO date
+  bookTitle: string;
+  chapterId: number;
+  success: boolean;
+}
+
 export interface UserProgress {
   completedChapters: Record<string, boolean>; // key: "BookTitle-ChapterId"
   reviewDates: Record<string, string>; // key: "BookTitle-ChapterId", value: nextReview ISO
   reviewLevels: Record<string, number>;
   quizScores: Record<string, number>;
+  studyHistory: StudySession[];
 }
