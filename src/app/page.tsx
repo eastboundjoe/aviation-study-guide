@@ -78,6 +78,41 @@ export default function Dashboard() {
         </div>
       </div>
 
+      {/* Retaining Information Video Section */}
+      <div className="mb-12 bg-white rounded-3xl p-8 border border-slate-200 shadow-sm flex flex-col md:flex-row gap-8 items-center">
+        <div className="flex-1">
+          <div className="flex items-center gap-2 mb-2">
+            <BookOpen size={20} className="text-blue-600" />
+            <span className="text-xs font-bold uppercase tracking-widest text-slate-500">Essential Skill</span>
+          </div>
+          <h2 className="text-3xl font-bold text-slate-900 mb-4">The Marginalia Method</h2>
+          <p className="text-slate-600 mb-6 leading-relaxed">
+            Professor Kaplan explains why &quot;passing your eyes over the text&quot; is a waste of time. 
+            Learn the recursive summary technique that forces your brain to engage with the 
+            meaning of every paragraph you read.
+          </p>
+          <a 
+            href="https://www.youtube.com/watch?v=uiNB-6SuqVA"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white rounded-xl font-bold hover:bg-slate-800 transition-colors shadow-sm"
+          >
+            <PlayCircle size={20} /> Watch Full Lecture
+          </a>
+        </div>
+        <div className="flex-1 w-full aspect-video rounded-2xl overflow-hidden shadow-lg border border-slate-100">
+          <iframe 
+            width="100%" 
+            height="100%" 
+            src="https://www.youtube.com/embed/uiNB-6SuqVA" 
+            title="Professor Kaplan: How to Retain Everything You Learn" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
+
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Study Schedule Section */}
         <div className="lg:col-span-3">

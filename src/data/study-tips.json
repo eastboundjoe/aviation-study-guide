@@ -40,5 +40,12 @@
     "description": "Condense large amounts of info into single-page 'maps'. Remembering WHERE something was on a page helps you recall WHAT it was during the test.",
     "source": "Radiology Resident",
     "videoUrl": "https://www.youtube.com/watch?v=la7FzGdz1Sc&t=334s"
+  },
+  {
+    "title": "Professor Kaplan's Marginalia",
+    "icon": "BookOpen",
+    "description": "Don't just read—interact. Summarize each paragraph in the margin. For every new paragraph, write one sentence summarizing everything prior and one for the current text. This recursive process forces semantic understanding.",
+    "source": "Professor Kaplan",
+    "videoUrl": "https://www.youtube.com/watch?v=uiNB-6SuqVA"
   }
 ]
