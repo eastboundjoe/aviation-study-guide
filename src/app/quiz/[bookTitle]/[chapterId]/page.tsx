@@ -30,9 +30,9 @@ export default function QuizPage() {
 
   if (!quiz) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center p-6 text-center">
-        <h2 className="text-2xl font-bold mb-4">Quiz not found for this chapter.</h2>
-        <p className="text-slate-600 mb-8">We're still generating questions for some chapters.</p>
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex flex-col items-center justify-center p-6 text-center">
+        <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Quiz not found for this chapter.</h2>
+        <p className="text-slate-600 dark:text-slate-400 mb-8">We&apos;re still generating questions for some chapters.</p>
         <Link href="/" className="px-6 py-2 bg-blue-600 text-white rounded-lg">Go Back</Link>
       </div>
     );
@@ -71,22 +71,22 @@ export default function QuizPage() {
     const passed = finalScore / quiz.questions.length >= 0.7;
 
     return (
-      <div className="min-h-screen bg-slate-50 flex items-center justify-center p-6">
-        <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-xl max-w-md w-full text-center">
-          <div className={`w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 ${passed ? 'bg-emerald-100 text-emerald-600' : 'bg-amber-100 text-amber-600'}`}>
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex items-center justify-center p-6">
+        <div className="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-xl max-w-md w-full text-center">
+          <div className={`w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 ${passed ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400' : 'bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400'}`}>
             {passed ? <CheckCircle2 size={48} /> : <XCircle size={48} />}
           </div>
-          <h2 className="text-3xl font-bold text-slate-900 mb-2">{passed ? 'Great Job!' : 'Keep Practicing'}</h2>
-          <p className="text-slate-600 mb-6">You scored {finalScore} out of {quiz.questions.length}</p>
-          
+          <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">{passed ? 'Great Job!' : 'Keep Practicing'}</h2>
+          <p className="text-slate-600 dark:text-slate-400 mb-6">You scored {finalScore} out of {quiz.questions.length}</p>
+
           <div className="space-y-3">
-            <button 
+            <button
               onClick={() => router.push('/')}
               className="w-full py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition-colors flex items-center justify-center gap-2"
             >
               <Home size={20} /> Back to Dashboard
             </button>
-            <button 
+            <button
               onClick={() => {
                 setCurrentQuestionIdx(0);
                 setScore(0);
@@ -95,7 +95,7 @@ export default function QuizPage() {
                 setIsAnswered(false);
                 setShowOptions(false);
               }}
-              className="w-full py-3 bg-slate-100 text-slate-700 rounded-xl font-bold hover:bg-slate-200 transition-colors"
+              className="w-full py-3 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-xl font-bold hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
             >
               Retry Quiz
             </button>
@@ -106,38 +106,38 @@ export default function QuizPage() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 p-6 md:p-12">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 p-6 md:p-12 transition-colors">
       <div className="max-w-3xl mx-auto">
         <div className="flex items-center justify-between mb-8">
-          <Link href="/" className="text-slate-500 hover:text-slate-800 flex items-center gap-1 transition-colors">
+          <Link href="/" className="text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white flex items-center gap-1 transition-colors">
             <ChevronLeft size={20} /> Back
           </Link>
           <div className="text-right">
-            <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{bookTitle}</p>
-            <h1 className="text-lg font-bold text-slate-800">Chapter {chapterId}: {chapter?.title}</h1>
+            <p className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">{bookTitle}</p>
+            <h1 className="text-lg font-bold text-slate-800 dark:text-white">Chapter {chapterId}: {chapter?.title}</h1>
           </div>
         </div>
 
         {/* Progress Bar */}
-        <div className="mb-8 bg-slate-200 rounded-full h-1.5 w-full overflow-hidden">
-          <div 
-            className="bg-blue-600 h-full transition-all duration-500" 
+        <div className="mb-8 bg-slate-200 dark:bg-slate-800 rounded-full h-1.5 w-full overflow-hidden">
+          <div
+            className="bg-blue-600 h-full transition-all duration-500"
             style={{ width: `${((currentQuestionIdx) / quiz.questions.length) * 100}%` }}
           />
         </div>
 
-        <div className="bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm min-h-[500px] flex flex-col">
-          <p className="text-sm font-bold text-blue-600 mb-4 uppercase tracking-wider">Question {currentQuestionIdx + 1} of {quiz.questions.length}</p>
-          <h2 className="text-2xl font-bold text-slate-900 mb-8 leading-tight">
+        <div className="bg-white dark:bg-slate-900 p-8 md:p-12 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm min-h-[500px] flex flex-col">
+          <p className="text-sm font-bold text-blue-600 dark:text-blue-400 mb-4 uppercase tracking-wider">Question {currentQuestionIdx + 1} of {quiz.questions.length}</p>
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-8 leading-tight">
             {currentQuestion.question}
           </h2>
 
           {!showOptions && !isAnswered ? (
-            <div className="flex-1 flex flex-col items-center justify-center text-center p-8 bg-slate-50 rounded-2xl border-2 border-dashed border-slate-200">
-               <p className="text-slate-500 mb-6 font-medium italic">Try to verbalize the answer out loud before seeing the options.</p>
-               <button 
+            <div className="flex-1 flex flex-col items-center justify-center text-center p-8 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border-2 border-dashed border-slate-200 dark:border-slate-700">
+               <p className="text-slate-500 dark:text-slate-400 mb-6 font-medium italic">Try to verbalize the answer out loud before seeing the options.</p>
+               <button
                  onClick={() => setShowOptions(true)}
-                 className="px-8 py-3 bg-white border border-slate-200 text-slate-900 rounded-xl font-bold shadow-sm hover:shadow-md transition-all"
+                 className="px-8 py-3 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white rounded-xl font-bold shadow-sm hover:shadow-md transition-all"
                >
                  Show Options
                </button>
@@ -149,24 +149,24 @@ export default function QuizPage() {
                   key={idx}
                   onClick={() => handleOptionSelect(idx)}
                   className={`w-full text-left p-4 rounded-xl border-2 transition-all ${
-                    selectedOption === idx 
-                      ? isAnswered 
-                        ? idx === currentQuestion.correctAnswer 
-                          ? 'border-emerald-500 bg-emerald-50' 
-                          : 'border-rose-500 bg-rose-50'
-                        : 'border-blue-500 bg-blue-50'
+                    selectedOption === idx
+                      ? isAnswered
+                        ? idx === currentQuestion.correctAnswer
+                          ? 'border-emerald-500 bg-emerald-50 dark:bg-emerald-900/20'
+                          : 'border-rose-500 bg-rose-50 dark:bg-rose-900/20'
+                        : 'border-blue-500 bg-blue-50 dark:bg-blue-900/20'
                       : isAnswered && idx === currentQuestion.correctAnswer
-                        ? 'border-emerald-500 bg-emerald-50'
-                        : 'border-slate-100 bg-slate-50 hover:border-slate-300'
+                        ? 'border-emerald-500 bg-emerald-50 dark:bg-emerald-900/20'
+                        : 'border-slate-100 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/50 hover:border-slate-300 dark:hover:border-slate-600'
                   }`}
                 >
                   <div className="flex items-center gap-3">
                     <div className={`w-8 h-8 rounded-full border-2 flex items-center justify-center shrink-0 ${
-                      selectedOption === idx ? 'border-current' : 'border-slate-200'
+                      selectedOption === idx ? 'border-current' : 'border-slate-200 dark:border-slate-600'
                     }`}>
                       {String.fromCharCode(65 + idx)}
                     </div>
-                    <span className="font-medium text-slate-700">{option}</span>
+                    <span className="font-medium text-slate-700 dark:text-slate-200">{option}</span>
                   </div>
                 </button>
               ))}
@@ -174,7 +174,7 @@ export default function QuizPage() {
           )}
 
           {isAnswered && (
-            <div className={`mt-8 p-4 rounded-xl ${selectedOption === currentQuestion.correctAnswer ? 'bg-emerald-50 text-emerald-800' : 'bg-rose-50 text-rose-800'}`}>
+            <div className={`mt-8 p-4 rounded-xl ${selectedOption === currentQuestion.correctAnswer ? 'bg-emerald-50 dark:bg-emerald-900/20 text-emerald-800 dark:text-emerald-200' : 'bg-rose-50 dark:bg-rose-900/20 text-rose-800 dark:text-rose-200'}`}>
               <p className="text-sm leading-relaxed">
                 <span className="font-bold mr-2">{selectedOption === currentQuestion.correctAnswer ? 'Correct!' : 'Incorrect.'}</span>
                 {currentQuestion.explanation}
@@ -187,7 +187,7 @@ export default function QuizPage() {
               <button
                 disabled={selectedOption === null || !showOptions}
                 onClick={handleCheck}
-                className="px-8 py-3 bg-slate-900 text-white rounded-xl font-bold disabled:opacity-30 transition-opacity"
+                className="px-8 py-3 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-xl font-bold disabled:opacity-30 transition-opacity"
               >
                 Check Answer
               </button>

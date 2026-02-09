@@ -209,9 +209,9 @@ export default function CheckpointPage() {
 
   if (!checkpoint) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center p-6 text-center">
-        <h2 className="text-2xl font-bold mb-4">Checkpoint not found for this chapter.</h2>
-        <p className="text-slate-600 mb-8">We're still generating key points for some books.</p>
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex flex-col items-center justify-center p-6 text-center">
+        <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Checkpoint not found for this chapter.</h2>
+        <p className="text-slate-600 dark:text-slate-400 mb-8">We&apos;re still generating key points for some books.</p>
         <Link href="/" className="px-6 py-2 bg-blue-600 text-white rounded-lg">Go Back</Link>
       </div>
     );
@@ -219,14 +219,14 @@ export default function CheckpointPage() {
 
   if (isFinished) {
     return (
-      <div className="min-h-screen bg-slate-50 flex items-center justify-center p-6">
-        <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-xl max-w-md w-full text-center">
-          <div className="w-20 h-20 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto mb-6">
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex items-center justify-center p-6">
+        <div className="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-xl max-w-md w-full text-center">
+          <div className="w-20 h-20 rounded-full bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mx-auto mb-6">
             <Trophy size={48} />
           </div>
-          <h2 className="text-3xl font-bold text-slate-900 mb-2">Knowledge Captured!</h2>
-          <p className="text-slate-600 mb-6">You've successfully verbalized the key points for Chapter {chapterId}.</p>
-          <button 
+          <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">Knowledge Captured!</h2>
+          <p className="text-slate-600 dark:text-slate-400 mb-6">You&apos;ve successfully verbalized the key points for Chapter {chapterId}.</p>
+          <button
             onClick={() => router.push('/')}
             className="w-full py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition-colors"
           >
@@ -238,15 +238,15 @@ export default function CheckpointPage() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 p-6 md:p-12">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 p-6 md:p-12 transition-colors">
       <audio ref={audioRef} hidden />
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center justify-between mb-8">
-          <Link href="/" className="text-slate-500 hover:text-slate-800 flex items-center gap-1 transition-colors">
+          <Link href="/" className="text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white flex items-center gap-1 transition-colors">
             <ChevronLeft size={20} /> Back
           </Link>
           <div className="text-right flex items-center gap-4">
-            <button 
+            <button
               onClick={() => {
                 const newMuted = !isMuted;
                 setIsMuted(newMuted);
@@ -255,14 +255,14 @@ export default function CheckpointPage() {
                   if (audioRef.current) audioRef.current.pause();
                 }
               }}
-              className={`p-2 rounded-full transition-colors ${isMuted ? 'bg-slate-200 text-slate-500' : 'bg-blue-100 text-blue-600'}`}
+              className={`p-2 rounded-full transition-colors ${isMuted ? 'bg-slate-200 dark:bg-slate-800 text-slate-500 dark:text-slate-400' : 'bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400'}`}
               title={isMuted ? "Unmute AI Voice" : "Mute AI Voice"}
             >
               {isMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
             </button>
             <div>
-              <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{bookTitle}</p>
-              <h1 className="text-lg font-bold text-slate-800">Chapter {chapterId}: {chapter?.title}</h1>
+              <p className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">{bookTitle}</p>
+              <h1 className="text-lg font-bold text-slate-800 dark:text-white">Chapter {chapterId}: {chapter?.title}</h1>
             </div>
           </div>
         </div>
@@ -270,9 +270,9 @@ export default function CheckpointPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Recording Side */}
           <div className="space-y-6">
-            <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm min-h-[400px] flex flex-col relative overflow-hidden">
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm min-h-[400px] flex flex-col relative overflow-hidden">
               <div className="flex items-center justify-between mb-6">
-                <h2 className="text-xl font-bold text-slate-900 flex items-center gap-2">
+                <h2 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
                   <MessageCircle className="text-blue-500" size={20} /> Verbal Recall
                 </h2>
                 {isRecording && (
@@ -287,19 +287,19 @@ export default function CheckpointPage() {
                 )}
               </div>
 
-              <p className="text-slate-500 text-sm mb-8 leading-relaxed italic">
-                "Explain the chapter out loud as if you were teaching it to a friend. 
-                Include the core rules and regulations mentioned in your reading."
+              <p className="text-slate-500 dark:text-slate-400 text-sm mb-8 leading-relaxed italic">
+                &quot;Explain the chapter out loud as if you were teaching it to a friend.
+                Include the core rules and regulations mentioned in your reading.&quot;
               </p>
 
-              <div className="flex-1 bg-slate-50 rounded-2xl p-6 border border-slate-100 overflow-y-auto mb-8">
+              <div className="flex-1 bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-6 border border-slate-100 dark:border-slate-700 overflow-y-auto mb-8">
                 {transcript || interimTranscript ? (
                   <div className="leading-relaxed">
-                    <span className="text-slate-700">{transcript}</span>
-                    <span className="text-slate-400 italic">{interimTranscript}</span>
+                    <span className="text-slate-700 dark:text-slate-200">{transcript}</span>
+                    <span className="text-slate-400 dark:text-slate-500 italic">{interimTranscript}</span>
                   </div>
                 ) : (
-                  <p className="text-slate-300 text-center py-12 italic">Your live transcript will appear here...</p>
+                  <p className="text-slate-300 dark:text-slate-600 text-center py-12 italic">Your live transcript will appear here...</p>
                 )}
               </div>
 
@@ -308,11 +308,11 @@ export default function CheckpointPage() {
                   onClick={toggleRecording}
                   disabled={isAnalyzing || isPlaying}
                   className={`w-20 h-20 rounded-full flex items-center justify-center transition-all ${
-                    isRecording 
-                    ? 'bg-rose-500 text-white shadow-lg shadow-rose-200 scale-110' 
+                    isRecording
+                    ? 'bg-rose-500 text-white shadow-lg shadow-rose-200 dark:shadow-rose-900/30 scale-110'
                     : (isAnalyzing || isPlaying)
-                      ? 'bg-slate-200 text-slate-400 cursor-wait'
-                      : 'bg-blue-600 text-white shadow-lg shadow-blue-200 hover:bg-blue-700'
+                      ? 'bg-slate-200 dark:bg-slate-800 text-slate-400 cursor-wait'
+                      : 'bg-blue-600 text-white shadow-lg shadow-blue-200 dark:shadow-blue-900/30 hover:bg-blue-700'
                   }`}
                 >
                   {isRecording ? <MicOff size={32} /> : (isAnalyzing || isPlaying) ? <RefreshCw className="animate-spin" size={32} /> : <Mic size={32} />}
@@ -358,23 +358,23 @@ export default function CheckpointPage() {
               </div>
             )}
 
-            <button 
+            <button
               onClick={() => setShowSummary(!showSummary)}
-              className="w-full flex items-center justify-center gap-2 text-slate-400 hover:text-slate-600 transition-colors text-sm font-medium"
+              className="w-full flex items-center justify-center gap-2 text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 transition-colors text-sm font-medium"
             >
               <Info size={16} /> {showSummary ? 'Hide' : 'Need a hint? Show'} Chapter Summary
             </button>
-            
+
             {showSummary && (
-              <div className="bg-blue-50 p-6 rounded-2xl border border-blue-100 text-blue-800 text-sm leading-relaxed animate-in fade-in slide-in-from-top-2">
+              <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-2xl border border-blue-100 dark:border-blue-800 text-blue-800 dark:text-blue-200 text-sm leading-relaxed animate-in fade-in slide-in-from-top-2">
                 {checkpoint.summary}
               </div>
             )}
 
-            <div className="pt-12 border-t border-slate-100">
-               <button 
+            <div className="pt-12 border-t border-slate-100 dark:border-slate-800">
+               <button
                  onClick={() => setShowDebug(!showDebug)}
-                 className="text-[10px] text-slate-300 hover:text-slate-500 uppercase tracking-widest font-bold"
+                 className="text-[10px] text-slate-300 dark:text-slate-600 hover:text-slate-500 dark:hover:text-slate-400 uppercase tracking-widest font-bold"
                >
                  {showDebug ? 'Hide' : 'Show'} Debug Info
                </button>
@@ -388,22 +388,22 @@ export default function CheckpointPage() {
           </div>
 
           {/* Key Points Side */}
-          <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm h-fit">
-            <h2 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <div className="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm h-fit">
+            <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
               <CheckCircle2 className="text-emerald-500" size={20} /> Target Key Points
             </h2>
-            
+
             <div className="space-y-4 mb-12">
               {keyPoints.map((kp) => (
-                <div 
-                  key={kp.id} 
+                <div
+                  key={kp.id}
                   className={`p-4 rounded-xl border-2 transition-all duration-500 flex items-start gap-3 ${
-                    kp.checked 
-                    ? 'bg-emerald-50 border-emerald-200 text-emerald-900' 
-                    : 'bg-slate-50 border-slate-100 text-slate-400'
+                    kp.checked
+                    ? 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-200 dark:border-emerald-800 text-emerald-900 dark:text-emerald-200'
+                    : 'bg-slate-50 dark:bg-slate-800/50 border-slate-100 dark:border-slate-700 text-slate-400 dark:text-slate-500'
                   }`}
                 >
-                  <div className={`mt-1 shrink-0 ${kp.checked ? 'text-emerald-500' : 'text-slate-200'}`}>
+                  <div className={`mt-1 shrink-0 ${kp.checked ? 'text-emerald-500' : 'text-slate-200 dark:text-slate-600'}`}>
                     <CheckCircle2 size={20} />
                   </div>
                   <p className="text-sm font-medium leading-snug">{kp.text}</p>
@@ -416,15 +416,15 @@ export default function CheckpointPage() {
               disabled={isRecording || isPlaying}
               className={`w-full py-4 rounded-2xl font-bold transition-all flex items-center justify-center gap-2 ${
                 keyPoints.every(kp => kp.checked)
-                ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-100 hover:bg-emerald-700'
-                : 'bg-slate-100 text-slate-400 cursor-not-allowed'
+                ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-100 dark:shadow-emerald-900/30 hover:bg-emerald-700'
+                : 'bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500 cursor-not-allowed'
               }`}
             >
               {keyPoints.every(kp => kp.checked) ? 'Complete Checkpoint' : 'Cover all Key Points to Finish'}
             </button>
-            
+
             {keyPoints.every(kp => kp.checked) && (
-              <p className="text-center text-xs text-emerald-600 font-bold mt-4 uppercase tracking-widest animate-bounce">
+              <p className="text-center text-xs text-emerald-600 dark:text-emerald-400 font-bold mt-4 uppercase tracking-widest animate-bounce">
                 Mastery Achieved!
               </p>
             )}
